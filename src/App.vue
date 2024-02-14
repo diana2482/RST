@@ -1,11 +1,16 @@
 <template>
+  <HeaderComponent />
   <router-view />
 </template>
 
 <script>
+import HeaderComponent from './components/HeaderComponent.vue'
 
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    HeaderComponent
+  }
 }
 </script>
 
@@ -17,6 +22,7 @@ export default {
   /* background-color: #F5F6F7; */
   font-family: Poppins, sans-serif;
   font-size: 1rem;
+  color: white;
 }
 
 html, body {
