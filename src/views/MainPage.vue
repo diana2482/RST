@@ -1,5 +1,5 @@
 <template>
-  <div class="main-page-image-background">a
+  <div class="main-page-image-background">
     <div class="main-logo-text">
       <div class="main-logo-text-element">rychlejsie</div>
       <div class="main-logo-text-element">rychlejsie</div>
@@ -9,15 +9,18 @@
 </template>
 
 <script>
+export default {
+  name: 'MainPage'
+}
 
 </script>
 
 <style>
 .main-page-image-background{
   display: flex;
-  width: 1920px;
-  height: 1080px;
-  /* height: 67.5rem; */
+  width: 100vw;
+  height: 100vh;
+  min-height: 500px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -45,7 +48,6 @@ font-style: normal;
 font-weight: 500;
 line-height: 150.667%; /* 7.0625rem */
 letter-spacing: -0.32813rem;
-/*here is a line of code that makes all text uppercase*/
 text-transform: uppercase;
 }
 </style>

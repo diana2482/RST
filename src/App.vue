@@ -1,16 +1,16 @@
 <template>
-  <HeaderComponent />
+  <NavigationBar />
   <router-view />
+
 </template>
 
 <script>
-import HeaderComponent from './components/HeaderComponent.vue'
-
+import NavigationBar from './components/NavigationBar.vue'
 export default {
-  name: 'App',
   components: {
-    HeaderComponent
-  }
+    NavigationBar
+  },
+  name: 'App'
 }
 </script>
 
@@ -22,7 +22,7 @@ export default {
   /* background-color: #F5F6F7; */
   font-family: Poppins, sans-serif;
   font-size: 1rem;
-  color: white;
+  color: black;
 }
 
 html, body {

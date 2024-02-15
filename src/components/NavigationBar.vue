@@ -5,7 +5,6 @@
             sluzby
             sluzby
         </div>
-        HEADERHEADERHEADERHEADERHEADERHEADER
 
     </div>
 </template>
