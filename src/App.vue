@@ -20,9 +20,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   /* TODO: add background image */
   /* background-color: #F5F6F7; */
-  font-family: Poppins, sans-serif;
+  font-family: Poppins, sans-serif !important;
   font-size: 1rem;
-  color: black;
+  color: white;
 }
 
 html, body {
@@ -33,6 +33,5 @@ html, body {
 
 a {
   text-decoration: none;
-  color: white;
 }
 </style>

@@ -6,6 +6,17 @@
       <div class="main-logo-text-element">rychlejsie</div>
     </div>
   </div>
+
+  <div class="main-page-button">Oprava počítačov a notebookov
+  </div>
+  <div class="main-page-button">
+    yuguy
+    rjy
+    trhtrhhstr<br>
+    srh
+    rs<br>
+    aeth
+  </div>
 </template>
 
 <script>
@@ -31,23 +42,37 @@ export default {
 }
 .main-logo-text{
   display: flex;
-height: 17.3125rem;
-flex-direction: column;
-justify-content: center;
-align-items: flex-start;
-gap: -2.8125rem;
-position: absolute;
+  height: 17.3125rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: -2.8125rem;
+  position: absolute;
 }
 .main-logo-text-element{
-  color: #FFF;
--webkit-text-stroke-width: 0.30000001192092896;
--webkit-text-stroke-color: #FFF;
-font-family: Poppins, sans-serif;
-font-size: 4.6875rem;
-font-style: normal;
-font-weight: 500;
-line-height: 150.667%; /* 7.0625rem */
-letter-spacing: -0.32813rem;
-text-transform: uppercase;
+  font-size: 4.6875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150.667%; /* 7.0625rem */
+  letter-spacing: -0.32813rem;
+  text-transform: uppercase;
+}
+.main-page-button{
+  background-image: url("../assets/T_PC_Zostavy.png");
+  width: 11.5vw;
+  height: 27.5vw; 
+  border-radius: 1.875rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; 
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-page-button-text{
+font-size: 1.1%; 
+
 }
 </style>
+14.0625
