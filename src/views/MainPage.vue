@@ -1,27 +1,52 @@
 <template>
   <div class="main-page-image-background">
     <div class="main-logo-text">
-      <div class="main-logo-text-element">rychlejsie</div>
-      <div class="main-logo-text-element">rychlejsie</div>
-      <div class="main-logo-text-element">rychlejsie</div>
+      <div class="main-logo-text-element">RÝCHLEJŠIE</div>
+      <div class="main-logo-text-element">SPOĽAHLIVEJŠIE</div>
+      <div class="main-logo-text-element">TICHŠIE</div>
     </div>
   </div>
 
-  <div class="main-page-button">Oprava počítačov a notebookov
+  <div class="main-page-buttons" style="margin-bottom: 3rem;">    
+    <MainPageButton
+      imageSrc="T_Notebooky.png"
+      hoverImageSrc="T_Hover.png"
+      text="Oprava počítačov a notebookov"
+    /><MainPageButton
+      imageSrc="T_Notebooky.png"
+      hoverImageSrc="T_Hover.png"
+      text="Skladanie počítačov"
+    /><MainPageButton
+      imageSrc="T_Notebooky.png"
+      hoverImageSrc="T_Hover.png"
+      text="Diagnostika"
+    />
   </div>
-  <div class="main-page-button">
-    yuguy
-    rjy
-    trhtrhhstr<br>
-    srh
-    rs<br>
-    aeth
+  <div class="main-page-buttons">   
+  <MainPageButton
+      imageSrc="T_Notebooky.png"
+      hoverImageSrc="T_Hover.png"
+      text="PC zostavy"
+    /><MainPageButton
+      imageSrc="T_Notebooky.png"
+      hoverImageSrc="T_Hover.png"
+      text="Notebooky"
+    /><MainPageButton
+      imageSrc="T_Notebooky.png"
+      hoverImageSrc="T_Hover.png"
+      text="Portfólio"
+    />
   </div>
 </template>
 
 <script>
+import MainPageButton from '../components/MainPageButton.vue';
+
 export default {
-  name: 'MainPage'
+  name: 'MainPage',
+  components: {
+    MainPageButton,
+  },
 }
 
 </script>
@@ -40,39 +65,28 @@ export default {
   background-size: cover;
   background-position: center;
 }
-.main-logo-text{
-  display: flex;
-  height: 17.3125rem;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: -2.8125rem;
-  position: absolute;
-}
-.main-logo-text-element{
-  font-size: 4.6875rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 150.667%; /* 7.0625rem */
-  letter-spacing: -0.32813rem;
+.main-logo-text{display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: -2.8125rem;
   text-transform: uppercase;
 }
-.main-page-button{
-  background-image: url("../assets/T_PC_Zostavy.png");
-  width: 11.5vw;
-  height: 27.5vw; 
-  border-radius: 1.875rem;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end; 
-  text-align: center;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.main-logo-text-element{
+  color: #FFF;
+text-shadow: 1px 6px 4px rgba(0, 0, 0, 0.50);
+font-size: 4.6875rem;
+font-style: normal;
+font-weight: 600;
+line-height: 150.667%; /* 7.0625rem */
+letter-spacing: -0.23438rem;
 }
-.main-page-button-text{
-font-size: 1.1%; 
-
+.main-page-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 2.5rem;
+    width: 30%;
+    margin: 0 auto;
 }
 </style>
-14.0625
