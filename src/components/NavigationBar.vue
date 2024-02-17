@@ -2,7 +2,7 @@
     <router-link :to="{ name: 'MainPage' }" class="main-logo">RST.sk</router-link>
 
     <LanguageSwitcher class="lang-switcher" /> 
-    
+
     <div class="main-header">
         <div class="navigation">
             <!-- Reroute to MainPage and go to anchor with id #services -->
@@ -63,7 +63,7 @@ export default {
 }
 .lang-switcher {
     position: fixed;
-    right: 5rem;
+    right: 5.7rem;
     top: 2rem;
     z-index: 1001;
 }

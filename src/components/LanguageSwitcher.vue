@@ -33,11 +33,11 @@
   
 <style scoped>
 .language-switcher {
-    width: 100px;
+    width: 80px;
     height: 35px;
     border-radius: 3rem;
     border: 1px solid #FFF;
-    box-shadow: inset 0 0 0 4px white;
+    box-shadow: inset 0 0 0 3px white;
     /* position: relative; */
     cursor: pointer;
     overflow: hidden;
@@ -62,8 +62,8 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 0;
-    right: 50px;
+    left: -10px;
+    right: 40px;
     background-color: white;
     border-radius: 20px;
     transition: transform 0.3s ease-in-out;
