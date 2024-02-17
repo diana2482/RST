@@ -1,5 +1,8 @@
 <template>
+    <router-link :to="{ name: 'MainPage' }" class="main-logo">RST.sk</router-link>
+
     <LanguageSwitcher class="lang-switcher" /> 
+    
     <div class="main-header">
         <div class="navigation">
             <!-- Reroute to MainPage and go to anchor with id #services -->
@@ -49,10 +52,19 @@ export default {
     font-style: normal;
     font-weight: 500;
 }
+.main-logo {
+    color: #FFF;
+    position: fixed;
+    left: 5rem;
+    top: 2rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    z-index: 1001;
+}
 .lang-switcher {
     position: fixed;
-    right: 5rem; /* Adjust as needed for your layout */
-    top: 2rem; /* Adjust as needed for your layout */
-    z-index: 1001; /* Ensure it's above the .main-header */
+    right: 5rem;
+    top: 2rem;
+    z-index: 1001;
 }
 </style>

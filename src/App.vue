@@ -39,11 +39,9 @@ body {
   scrollbar-width: none;
   /* Firefox */
 }
-
 body::-webkit-scrollbar {
   display: none;
 }
-
 a {
   text-decoration: none;
   cursor: pointer;
