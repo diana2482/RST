@@ -1,12 +1,10 @@
 <template>
-    <div class="main-page-button" @mouseover="hover = true" @mouseleave="hover = false">
+    <div class="main-page-button" @mouseover="hover = true" @mouseleave="hover = false" @click="navigate">
         <img :src="require('@/assets/' + imageSrc)" class="main-page-button-image">
-        <transition name="fade">
-            <img v-if="hover" :src="require('@/assets/' + hoverImageSrc)" class="main-page-button-hover">
-        </transition>
 
+        <img :src="require('@/assets/T_Hover.png')" class="main-page-button-hover">
 
-        <div class="main-page-button-text">{{ text }}</div>
+        <div class="main-page-button-text" :style="{ top: topMargin}">{{ text }}</div>
     </div>
 </template>
   
@@ -18,13 +16,18 @@ export default {
             type: String,
             required: true,
         },
-        hoverImageSrc: {
-            type: String,
-            required: true,
-        },
         text: {
             type: String,
             required: true,
+        },
+        page: {
+            type: String,
+            required: true,
+        },
+        topMargin: {
+            type: String,
+            required: false,
+            default: "22rem",
         },
     },
     data() {
@@ -33,28 +36,18 @@ export default {
         };
     },
     methods: {
-        enter(el, done) {
-            el.style.opacity = 1;
-            done();
-        },
+        navigate() {
+            if (!this.page) {
+                return;
+            }
+
+            this.$router.push(this.page);
+        }
     }
 };
 </script>
   
 <style scoped>
-.fade-enter-active,
-.fade-leave-active {
-    transition: opacity 0.4s ease;
-}
-
-.fade-enter,
-.fade-leave-to
-
-/* Starting and ending states for the fade */
-    {
-    opacity: 0;
-}
-
 .main-page-button {
     width: 30%;
     position: relative;
@@ -72,8 +65,7 @@ export default {
     top: 0;
     left: 0;
     opacity: 0;
-    /* Hide by default */
-    transition: opacity 1s ease;
+    transition: opacity 0.3s ease;
     /* Masking */
     -webkit-mask-image: url('../assets/T_PC_Zostavy.png');
     /* Safari */
@@ -84,15 +76,21 @@ export default {
 
 .main-page-button:hover .main-page-button-hover {
     opacity: 1;
+    cursor: pointer;
 }
 
 .main-page-button-text {
     position: absolute;
-    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    width: 50%;
     text-align: center;
-    margin: 0;
-}</style>
+    /* margin: 0; */
+
+    width: 10.3125rem;
+    font-size: 1.375rem;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -5%;
+}
+</style>
   

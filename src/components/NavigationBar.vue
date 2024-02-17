@@ -1,40 +1,52 @@
 <template>
     <div class="main-header">
         <div class="navigation">
-            sluzby
-            sluzby
-            sluzby
-        </div>
+        <LanguageSwitcher /> 
+            <!-- Reroute to MainPage and go to anchor with id #services -->
+            <router-link :to="{ name: 'MainPage', hash: '#services' }" class="navigation-text-element">Služby</router-link>
+            
+            <div class="navigation-text-element">Referencie</div>
 
+            <!-- Other navigation items with route names -->
+            <router-link :to="{ name: 'PortfolioPage' }" class="navigation-text-element">Portfólio</router-link>
+            <router-link :to="{ name: 'ComputerPage' }" class="navigation-text-element">PC Zostavy</router-link>
+            <router-link :to="{ name: 'LaptopPage' }" class="navigation-text-element">Notebooky</router-link>
+            <router-link :to="{ name: 'AboutPage' }" class="navigation-text-element">O mne</router-link>
+        </div>
     </div>
 </template>
 
-<script>
 
+<script>
+import LanguageSwitcher from './LanguageSwitcher.vue'
+export default {
+    name: 'NavigationBar',
+    components: {
+        LanguageSwitcher
+    }
+}
 </script>
 
 <style>
-.main-header{
-    /* background-color: #ff000080; */
-    font-size: 20px;
-    font-weight: bold;
-    
+.main-header {
     position: fixed;
     width: 100%;
-    height: 100px;
-    line-height: 100px;
     text-align: center;
-    z-index: 1000; 
+    z-index: 1000;
 }
 .navigation {
-    display: flex;
-    justify-content: flex-end; /* Aligns items to the right */
-    align-items: center; /* Vertically centers items in the container */
-    height: 100%; /* Takes the full height of the header */
-    position: absolute; /* Position relative to the header */
-    right: 0; /* Align to the right side of the header */
-    top: 0; /* Align to the top of the header */
-    /* Remove the background-color if you don't want it */
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 2.5rem; 
+    position: absolute;
+    right: 6rem;
+    top: 5rem;
 }
-
+.navigation-text-element {
+    color: #FFF;
+    text-shadow: 1px 6px 4px rgba(0, 0, 0, 0.50);
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+}
 </style>
