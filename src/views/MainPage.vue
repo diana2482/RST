@@ -3,27 +3,28 @@
     <div class="main-logo-text">
 
       <div class="main-logo-text-element"
-      style="font-size: 4.6875rem; line-height: 150%;">RÝCHLEJŠIE</div>
+      style="font-size: 4.6875rem; line-height: 150%;">{{ $t('mainPage.rychlejsie') }}</div>
 
       <div class="main-logo-text-element"
-      style="font-size: 6rem; letter-spacing: -0.3rem;">SPOĽAHLIVEJŠIE</div>
+      style="font-size: 6rem; letter-spacing: -0.3rem;">{{ $t('mainPage.spolahlivejsie') }}</div>
 
       <div class="main-logo-text-element"
-      style="font-size: 4.375rem;">TICHŠIE</div>
+      style="font-size: 4.375rem;">{{ $t('mainPage.tichsie') }}</div>
 
     </div>
   </div>
 
   <div id="services" class="main-page-buttons" style="margin-bottom: 11.56rem;">
     <MainPageButton imageSrc="T_oprava_pocitacov a notebookov.png"
-    text="Oprava počítačov a notebookov" :page="'oprava-pc-notebook-kosice'" topMargin="19rem" />
-    <MainPageButton imageSrc="T_skladanie_pocitacov.png" text="Skladanie počítačov" :page="'novy-pc-kosice'" topMargin="19rem" />
-    <MainPageButton imageSrc="T_Diagnostika.png" text="Diagnostika" :page="'servis-pc-notebook-kosice'" topMargin="19rem" />
+    text="mainPage.opravaPC" :page="'oprava-pc-notebook-kosice'" topMargin="19rem" />
+    <MainPageButton imageSrc="T_skladanie_pocitacov.png" text="mainPage.skladaniePC" :page="'novy-pc-kosice'" topMargin="19rem" />
+    <MainPageButton imageSrc="T_Diagnostika.png" text="mainPage.diagnostika" :page="'servis-pc-notebook-kosice'" topMargin="19rem" />
   </div>
   <div class="main-page-buttons">
-    <MainPageButton imageSrc="T_PC_Zostavy.png" text="PC zostavy" :page="'pc-kosice'" />
-    <MainPageButton imageSrc="T_Notebooky.png" text="Notebooky" :page="'notebook-kosice'" />
-    <MainPageButton imageSrc="T_Portfólio.png" text="Portfólio" :page="'portfolio-pc-servis-kosice'" />
+    <MainPageButton imageSrc="T_PC_Zostavy.png" text="mainPage.pcZostavy" page="pc-kosice" />
+
+    <MainPageButton imageSrc="T_Notebooky.png" text="mainPage.notebooky" :page="'notebook-kosice'" />
+    <MainPageButton imageSrc="T_Portfólio.png" text="mainPage.portfolio" :page="'portfolio-pc-servis-kosice'" />
   </div>
 </template>
 

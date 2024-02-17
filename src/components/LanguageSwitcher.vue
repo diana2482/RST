@@ -1,36 +1,44 @@
 <template>
     <div class="language-switcher" @click="toggleLanguage">
-        <div class="languages">
-            <span class="language" :class="{ active: currentLanguage === 'SK' }">SK</span>
-            <span class="language" :class="{ active: currentLanguage === 'EN' }">EN</span>
-        </div>
-        <div class="slider" :class="{ 'slide-right': currentLanguage === 'EN' }"></div>
+      <div class="languages">
+        <span class="language" :class="{ active: currentLanguage === 'sk' }">SK</span>
+        <span class="language" :class="{ active: currentLanguage === 'en' }">EN</span>
+      </div>
+      <div class="slider" :class="{ 'slide-right': currentLanguage === 'en' }"></div>
     </div>
-</template>
+  </template>
   
-<script>
-export default {
+  <script>
+  export default {
     data() {
-        return {
-            currentLanguage: 'SK',
-        };
+      return {
+        currentLanguage: this.$i18n.locale,
+      };
     },
     methods: {
-        toggleLanguage() {
-            this.currentLanguage = this.currentLanguage === 'SK' ? 'EN' : 'SK';
-        },
+      toggleLanguage() {
+        this.currentLanguage = this.currentLanguage === 'sk' ? 'en' : 'sk';
+        // Update the i18n locale
+        this.$i18n.locale = this.currentLanguage;
+      },
     },
-};
-</script>
+    watch: {
+      // Reactively watch for i18n locale changes
+      '$i18n.locale'(newLocale) {
+        this.currentLanguage = newLocale;
+      },
+    },
+  };
+  </script>
   
 <style scoped>
 .language-switcher {
     width: 100px;
-    height: 40px;
+    height: 35px;
     border-radius: 3rem;
     border: 1px solid #FFF;
-    box-shadow: inset 0 0 0 5px white;
-    position: relative;
+    box-shadow: inset 0 0 0 4px white;
+    /* position: relative; */
     cursor: pointer;
     overflow: hidden;
 }

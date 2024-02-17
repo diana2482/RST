@@ -4,46 +4,51 @@
 
         <img :src="require('@/assets/T_Hover.png')" class="main-page-button-hover">
 
-        <div class="main-page-button-text" :style="{ top: topMargin}">{{ text }}</div>
+        <div class="main-page-button-text" :style="{ top: topMargin }">{{ translatedText }}</div>
     </div>
 </template>
   
   
 <script>
 export default {
-    props: {
-        imageSrc: {
-            type: String,
-            required: true,
-        },
-        text: {
-            type: String,
-            required: true,
-        },
-        page: {
-            type: String,
-            required: true,
-        },
-        topMargin: {
-            type: String,
-            required: false,
-            default: "22rem",
-        },
+  props: {
+    imageSrc: {
+      type: String,
+      required: true,
     },
-    data() {
-        return {
-            hover: false,
-        };
+    text: {
+      type: String,
+      required: true,
     },
-    methods: {
-        navigate() {
-            if (!this.page) {
-                return;
-            }
-
-            this.$router.push(this.page);
-        }
+    page: {
+      type: String,
+      required: true,
+    },
+    topMargin: {
+      type: String,
+      required: false,
+      default: "22rem",
+    },
+  },
+  data() {
+    return {
+      hover: false,
+    };
+  },
+  computed: {
+    translatedText() {
+      // This will automatically update when the locale changes
+      return this.$t(this.text);
     }
+  },
+  methods: {
+    navigate() {
+      if (!this.page) {
+        return;
+      }
+      this.$router.push(this.page);
+    }
+  }
 };
 </script>
   
