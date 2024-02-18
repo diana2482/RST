@@ -33,7 +33,7 @@
   
 <style scoped>
 .language-switcher {
-    width: 80px;
+    width: 90px;
     height: 35px;
     border-radius: 3rem;
     border: 1px solid #FFF;
