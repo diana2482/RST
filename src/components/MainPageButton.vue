@@ -96,6 +96,7 @@ export default {
     font-weight: 500;
     line-height: 150%;
     letter-spacing: -5%;
+    cursor: pointer;
 }
 </style>
   

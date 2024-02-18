@@ -2,14 +2,14 @@
   <div class="main-page-image-background">
     <div class="main-logo-text">
 
-      <div class="main-logo-text-element"
-      style="font-size: 4.6875rem; line-height: 150%;">{{ $t('mainPage.rychlejsie') }}</div>
+      <!-- <div class="main-logo-text-element" style="font-size: 4.6875rem; line-height: 150%;">{{ $t('mainPage.rychlejsie') }}</div> -->
+      <div class="main-logo-text-element" style="font-size: 3.9vw; height: 3.7vw;">{{ $t('mainPage.rychlejsie') }}</div>
 
-      <div class="main-logo-text-element"
-      style="font-size: 6rem; letter-spacing: -0.3rem;">{{ $t('mainPage.spolahlivejsie') }}</div>
+      <!-- <div class="main-logo-text-element" style="font-size: 6rem; letter-spacing: -0.3rem;">{{ $t('mainPage.spolahlivejsie') }}</div> -->
+      <div class="main-logo-text-element" style="font-size: 5vw; letter-spacing: -0.3rem; height: 5.2vw;">{{ $t('mainPage.spolahlivejsie') }}</div>
 
-      <div class="main-logo-text-element"
-      style="font-size: 4.375rem;">{{ $t('mainPage.tichsie') }}</div>
+      <!-- <div class="main-logo-text-element" style="font-size: 4.375rem;">{{ $t('mainPage.tichsie') }}</div> -->
+      <div class="main-logo-text-element" style="font-size: 3.65vw; height: 3.65vw;">{{ $t('mainPage.tichsie') }}</div>
 
     </div>
   </div>
@@ -43,9 +43,9 @@ export default {
 <style>
 .main-page-image-background {
   display: flex;
-  width: 100vw;
-  height: 100vh;
-  min-height: 500px;
+  width: 100vw; /* Full viewport width */
+  height: 0; /* Start with zero height */
+  padding-top: 69%; /* Adjust the percentage based on the image's aspect ratio */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -54,25 +54,26 @@ export default {
   background-position: top;
   position: relative;
 }
-
 .main-page-image-background::after {
-  content: "";
+  /* content: "";
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
   height: 20%;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(4,3,8,255) 90%);
-  pointer-events: none;
+  pointer-events: none; */
 }
-
 .main-logo-text {
   position: absolute;
   left: 36vw;
-  top: 32vh;
+  /* top: 32vh; */
+  /* top: 19rem; */
+  top: 13.5vw;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  height: 100%;
 }
 
 .main-logo-text-element {
@@ -81,7 +82,8 @@ export default {
   font-weight: 550;
   line-height: normal; /* 7.0625rem */
   letter-spacing: -0.23rem;
-  margin-top: -2.8125rem;
+  /* margin-top: -2.8125rem; */
+  margin: 0;
 }
 
 .main-page-buttons {
