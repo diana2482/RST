@@ -28,7 +28,15 @@ const messages = {
   en: {
     mainPage: {
       sluzby: 'Services',
-      rychlejsie: 'FASTER',
+      referencie: 'References',
+      portfolio: 'Portfolio',
+      pcZostavy: 'Custom PC',
+      notebooky: 'Laptops',
+      oMne: 'About me',
+      // buttons - the other 3 are in header
+      opravaPC: 'Computer and laptop repair',
+      skladaniePC: 'Custom built PC',
+      diagnostika: 'Diagnosis',
     }
     
   },
