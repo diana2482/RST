@@ -51,14 +51,16 @@ const routes = [
   },
 ];
 
-function smoothScrollTo(elementSelector, delay = 500, duration = 500) {
+function smoothScrollTo(elementSelector, delay, duration) {
   setTimeout(() => {
     const element = document.querySelector(elementSelector);
     if (!element) return;
 
     const startingY = window.scrollY;
     const elementRect = element.getBoundingClientRect();
-    const elementY = startingY + elementRect.top;
+    const viewportHeight = window.innerHeight;
+    // Calculate the top offset to align the element to the middle of the viewport
+    const elementY = startingY + elementRect.top - (viewportHeight / 2) + (elementRect.height / 2);
     const diff = elementY - startingY;
     let start;
 
@@ -80,7 +82,6 @@ function smoothScrollTo(elementSelector, delay = 500, duration = 500) {
   }, delay);
 }
 
-
 const router = createRouter({
   history: createWebHistory(),
   routes,
@@ -90,7 +91,7 @@ const router = createRouter({
     } else if (to.hash) {
       return new Promise(resolve => {
         // Adjust the delay and duration as needed
-        smoothScrollTo(to.hash, 400, 500); 
+        smoothScrollTo(to.hash, 400, 600); 
         resolve(); // No position is returned because scrolling is handled by smoothScrollTo
       });
     } else {
