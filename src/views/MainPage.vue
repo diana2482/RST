@@ -1,16 +1,9 @@
-<template style="margin-top: 0">
+<template>
   <div class="main-page-image-background">
     <div class="main-logo-text">
-
-      <!-- <div class="main-logo-text-element" style="font-size: 4.6875rem; line-height: 150%;">{{ $t('mainPage.rychlejsie') }}</div> -->
       <div class="main-logo-text-element" style="font-size: 3.9vw; height: 3.7vw;">{{ $t('mainPage.rychlejsie') }}</div>
-
-      <!-- <div class="main-logo-text-element" style="font-size: 6rem; letter-spacing: -0.3rem;">{{ $t('mainPage.spolahlivejsie') }}</div> -->
       <div class="main-logo-text-element" style="font-size: 5vw; letter-spacing: -0.3rem; height: 5.2vw;">{{ $t('mainPage.spolahlivejsie') }}</div>
-
-      <!-- <div class="main-logo-text-element" style="font-size: 4.375rem;">{{ $t('mainPage.tichsie') }}</div> -->
       <div class="main-logo-text-element" style="font-size: 3.65vw; height: 3.65vw;">{{ $t('mainPage.tichsie') }}</div>
-
     </div>
   </div>
 
@@ -23,7 +16,6 @@
   <SpacerComponent :space="'3rem'" id="services" />
   <div class="main-page-buttons">
     <MainPageButton imageSrc="T_PC_Zostavy.png" text="mainPage.pcZostavy" page="pc-kosice" />
-
     <MainPageButton imageSrc="T_Notebooky.png" text="mainPage.notebooky" :page="'notebook-kosice'" />
     <MainPageButton imageSrc="T_Portfólio.png" text="mainPage.portfolio" :page="'portfolio-pc-servis-kosice'" />
   </div>
@@ -31,26 +23,26 @@
   <SpacerComponent :space="'5rem'" />
 
   <div id="references" class="partners">
-    <img src="../assets/game_days.png" class="partner"/>
-    <img src="../assets/games_farm.png" class="partner"/>
-    <img src="../assets/tripple_hill.png" class="partner"/>
+    <PartnerComponent image="game_days.png" text="mainPage.gameDays" page="gamedays.sk" />
+    <PartnerComponent image="games_farm.png" text="mainPage.gamesFarm" page="games-farm.com" />
+    <PartnerComponent image="triple_hill.png" text="mainPage.tripleHill" page="triple-hill.com" />  
+    <PartnerComponent image="3dvision.png" text="mainPage.threeDVision" page="3dvision.com" />    
   </div>
-  <PopupComponent />
 
-  <div id="about"></div>
+  <div id="about" style="height: 30rem"></div>
 </template>
 
 <script>
-import MainPageButton from '../components/MainPageButton.vue';
-import SpacerComponent from '../components/SpacerComponent.vue';
-import PopupComponent from '@/components/PopupComponent.vue';
+import MainPageButton from '@/components/MainPageButton.vue';
+import SpacerComponent from '@/components/SpacerComponent.vue';
+import PartnerComponent from '@/components/PartnerComponent.vue';
 
 export default {
   name: 'MainPage',
   components: {
     MainPageButton,
     SpacerComponent,
-    PopupComponent,
+    PartnerComponent,
   },
 }
 </script>
@@ -99,15 +91,10 @@ export default {
 .partners{
   display: flex;
   align-items: flex-start;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 1.5rem;
-}
-
-.partner{
-  display: flex;
-  width: 18.75rem;
-  height: 7.75406rem;
-  justify-content: center;
-  align-items: center;
+  gap: 2rem;
+  max-width: 70%;
+  margin: 0 auto;
 }
 </style>

@@ -19,10 +19,11 @@ const messages = {
       opravaPC: 'Oprava počítačov a notebookov',
       skladaniePC: 'Skladanie počítačov',
       diagnostika: 'Diagnostika',
-
-
-      
-
+      // partners, references
+      gameDays: 'gamedays je uzasny event urcite tam treba ist kazdy rok',
+      gamesFarm: 'duri najlepsi zamestnanec',
+      tripleHill: 'daliborko milovany',
+      threeDVision: '3D',
     }
   },
   en: {
@@ -37,6 +38,8 @@ const messages = {
       opravaPC: 'Computer and laptop repair',
       skladaniePC: 'Custom built PC',
       diagnostika: 'Diagnosis',
+      // partners, references
+      gameDays: 'gamedays in inglish',
     }
     
   },

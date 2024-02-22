@@ -1,17 +1,42 @@
 <template>
-    <div class="popup-background">
-        <img class="popup-image" src="../assets/game_days.png"/>
-        <div class="popup-text">
-            Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet 
-        </div>
-        <a class="popup-link">gamedays.sk</a>
-
+    <div class="popup-background" @click.stop="handlePopupClick">
+        <div style="height: 7rem;"></div>
+        <div class="popup-text">{{ text }}</div>
+        <a class="popup-link" :href="formattedPage">{{ page }}</a>
     </div>
 </template>
 
 <script>
 export default {
+    props: {
+        text: {
+            type: String,
+            required: true,
+        },
+        page: {
+            type: String,
+            required: true,
+        },
+    },
     name: 'PopupComponent',
+    computed: {
+        // Computed property to format the page URL
+        formattedPage() {
+            // Check if the page prop starts with http:// or https://
+            if (!/^https?:\/\//i.test(this.page)) {
+                // If not, prepend https:// to the URL
+                return `https://${this.page}`;
+            }
+            // If it does, return it as is
+            return this.page;
+        },
+    },
+    methods: {
+        handlePopupClick(event) {
+            // Stops the click event from propagating to parent elements
+            event.stopPropagation();
+        },
+    },
 }
 </script>
 
@@ -22,25 +47,21 @@ export default {
     padding: 1.25rem;
     flex-direction: column;
     align-items: flex-start;
-    gap: 2.1875rem;
+    gap: 1rem;
     border-radius: 1.875rem;
     border: 1px solid #FFF;
     background: rgba(235, 0, 255, 0.16);
-
     z-index: 1000;
-}
-.popup-image {
-    height: 6.6875rem;
-    align-self: stretch;
-    /* background: url("../assets/game_days.png"), lightgray 10% / cover no-repeat; */
 }
 .popup-text {
     align-self: stretch;
+    overflow-wrap: break-word;
     text-align: center;
     font-size: 1.375rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 150.667%; /* 2.07169rem */
+    line-height: 150.667%;
+    /* 2.07169rem */
     letter-spacing: -0.06875rem;
 }
 .popup-link {
@@ -49,7 +70,7 @@ export default {
     font-size: 1.375rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 150.667%; /* 2.07169rem */
+    line-height: 150.667%;
     letter-spacing: -0.06875rem;
 }
 </style>

@@ -78,12 +78,10 @@ export default {
     /* Standard */
     mask-size: cover;
 }
-
 .main-page-button:hover .main-page-button-hover {
     opacity: 1;
     cursor: pointer;
 }
-
 .main-page-button-text {
     position: absolute;
     left: 50%;

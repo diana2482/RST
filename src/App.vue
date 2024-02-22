@@ -45,6 +45,7 @@ body::-webkit-scrollbar {
 a {
   text-decoration: none;
   cursor: pointer;
+  color: white;
 }
 .top-offset{
   margin-top: 8rem;
