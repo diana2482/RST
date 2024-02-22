@@ -1,4 +1,4 @@
-<template>
+<template style="margin-top: 0">
   <div class="main-page-image-background">
     <div class="main-logo-text">
 
@@ -20,7 +20,9 @@
     <MainPageButton imageSrc="T_skladanie_pocitacov.png" text="mainPage.skladaniePC" :page="'novy-pc-kosice'" topMargin="19rem" />
     <MainPageButton imageSrc="T_Diagnostika.png" text="mainPage.diagnostika" :page="'servis-pc-notebook-kosice'" topMargin="19rem" />
   </div>
+
   <SpacerComponent :space="'11.56rem'" />
+
   <div class="main-page-buttons">
     <MainPageButton imageSrc="T_PC_Zostavy.png" text="mainPage.pcZostavy" page="pc-kosice" />
 
@@ -30,7 +32,7 @@
 
   <SpacerComponent :space="'5rem'" />
 
-  <div class="partners">
+  <div id="references" class="partners">
     <img src="../assets/game_days.png" class="partner"/>
     <img src="../assets/games_farm.png" class="partner"/>
     <img src="../assets/tripple_hill.png" class="partner"/>
@@ -56,33 +58,21 @@ export default {
 
 <style>
 .main-page-image-background {
-  display: flex;
-  width: 100vw; /* Full viewport width */
-  height: 0; /* Start with zero height */
-  padding-top: 69%; /* Adjust the percentage based on the image's aspect ratio */
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-image: url('../assets/Header_computer.jpg');
-  background-size: cover;
-  background-position: top;
-  position: relative;
-}
-.main-page-image-background::after {
-  /* content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 20%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(4,3,8,255) 90%);
-  pointer-events: none; */
+    display: flex;
+    width: 100vw;
+    height: 0; /* Start with zero height */
+    padding-top: 69%; /* Adjust the percentage based on the image's aspect ratio */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../assets/Header_computer.jpg');
+    background-size: cover;
+    background-position: top;
+    position: relative;
 }
 .main-logo-text {
   position: absolute;
   left: 36vw;
-  /* top: 32vh; */
-  /* top: 19rem; */
   top: 13.5vw;
   display: flex;
   flex-direction: column;

@@ -1,16 +1,15 @@
 <template>
-    <router-link :to="{ name: 'MainPage' }" class="main-logo">RST.sk</router-link>
+    <div class="header">
+        <router-link :to="{ name: 'MainPage' }" class="main-logo">RST.sk</router-link>
 
-    <LanguageSwitcher class="lang-switcher" /> 
+        <LanguageSwitcher class="lang-switcher" /> 
 
-    <div class="main-header">
         <div class="navigation">
             <!-- Reroute to MainPage and go to anchor with id #services -->
             <router-link :to="{ name: 'MainPage', hash: '#services' }" class="navigation-text-element">{{ $t('mainPage.sluzby') }}</router-link>
             
-            <div class="navigation-text-element">{{ $t('mainPage.referencie') }}</div>
+            <router-link :to="{ name: 'MainPage', hash: '#references' }" class="navigation-text-element">{{ $t('mainPage.referencie') }}</router-link>
 
-            <!-- Other navigation items with route names -->
             <router-link :to="{ name: 'PortfolioPage' }" class="navigation-text-element">{{ $t('mainPage.portfolio') }}</router-link>
             <router-link :to="{ name: 'ComputerPage' }" class="navigation-text-element">{{ $t('mainPage.pcZostavy') }}</router-link>
             <router-link :to="{ name: 'LaptopPage' }" class="navigation-text-element">{{ $t('mainPage.notebooky') }}</router-link>
@@ -31,19 +30,28 @@ export default {
 </script>
 
 <style>
-.main-header {
-    position: fixed;
-    width: 100%;
-    text-align: center;
+.header {
     z-index: 1000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4rem;
+}
+.main-logo {
+    color: #FFF;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-left: 5rem;
 }
 .navigation {
     display: inline-flex;
     align-items: flex-start;
-    gap: 2.5rem; 
-    position: absolute;
-    right: 6rem;
-    top: 5rem;
+    gap: 2.3rem;
+    margin-right: 5rem;
 }
 .navigation-text-element {
     color: #FFF;
@@ -52,18 +60,9 @@ export default {
     font-style: normal;
     font-weight: 500;
 }
-.main-logo {
-    color: #FFF;
-    position: fixed;
-    left: 5rem;
-    top: 2rem;
-    font-size: 2.5rem;
-    font-weight: 600;
-    z-index: 1001;
-}
 .lang-switcher {
-    position: fixed;
-    right: 5.7rem;
+    position: absolute;
+    right: 4.5rem;
     top: 2rem;
     z-index: 1001;
 }

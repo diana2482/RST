@@ -15,7 +15,6 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
-
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -30,6 +29,7 @@ export default {
 
 html,
 body {
+  /* position: relative; */
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -45,5 +45,8 @@ body::-webkit-scrollbar {
 a {
   text-decoration: none;
   cursor: pointer;
+}
+.top-offset{
+  margin-top: 8rem;
 }
 </style>
