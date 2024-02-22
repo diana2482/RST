@@ -13,7 +13,7 @@
             <router-link :to="{ name: 'PortfolioPage' }" class="navigation-text-element">{{ $t('mainPage.portfolio') }}</router-link>
             <router-link :to="{ name: 'ComputerPage' }" class="navigation-text-element">{{ $t('mainPage.pcZostavy') }}</router-link>
             <router-link :to="{ name: 'LaptopPage' }" class="navigation-text-element">{{ $t('mainPage.notebooky') }}</router-link>
-            <router-link :to="{ name: 'AboutPage' }" class="navigation-text-element">{{ $t('mainPage.oMne') }}</router-link>
+            <router-link :to="{ name: 'MainPage', hash: '#about' }" class="navigation-text-element">{{ $t('mainPage.oMne') }}</router-link>
         </div>
     </div>
 </template>

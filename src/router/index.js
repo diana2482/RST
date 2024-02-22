@@ -6,7 +6,6 @@ import LaptopPage from "@/views/LaptopPage.vue";
 import NewComputerPage from "@/views/NewComputerPage.vue";
 import PortfolioPage from "@/views/PortfolioPage.vue";
 import RepairPage from "@/views/RepairPage.vue";
-import AboutPage from "@/views/AboutPage.vue";
 
 const routes = [
   {
@@ -43,11 +42,6 @@ const routes = [
     path: "/oprava-pc-notebook-kosice",
     name: "RepairPage",
     component: RepairPage,
-  },
-  {
-    path: "/o-mne",
-    name: "AboutPage",
-    component: AboutPage,
   },
 ];
 

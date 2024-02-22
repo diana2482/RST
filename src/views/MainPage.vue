@@ -36,6 +36,8 @@
     <img src="../assets/tripple_hill.png" class="partner"/>
   </div>
   <PopupComponent />
+
+  <div id="about"></div>
 </template>
 
 <script>
