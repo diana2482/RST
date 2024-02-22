@@ -20,9 +20,7 @@
     <MainPageButton imageSrc="T_skladanie_pocitacov.png" text="mainPage.skladaniePC" :page="'novy-pc-kosice'" topMargin="19rem" />
     <MainPageButton imageSrc="T_Diagnostika.png" text="mainPage.diagnostika" :page="'servis-pc-notebook-kosice'" topMargin="19rem" />
   </div>
-
-  <SpacerComponent :space="'11.56rem'" />
-
+  <SpacerComponent :space="'3rem'" />
   <div class="main-page-buttons">
     <MainPageButton imageSrc="T_PC_Zostavy.png" text="mainPage.pcZostavy" page="pc-kosice" />
 
@@ -73,7 +71,7 @@ export default {
 .main-logo-text {
   position: absolute;
   left: 36vw;
-  top: 13.5vw;
+  top: 20vw;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
