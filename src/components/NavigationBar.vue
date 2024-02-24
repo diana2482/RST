@@ -2,30 +2,77 @@
     <div class="header">
         <router-link :to="{ name: 'MainPage' }" class="main-logo">RST.sk</router-link>
 
-        <LanguageSwitcher class="lang-switcher" /> 
+        <LanguageSwitcher class="lang-switcher" />
 
-        <div class="navigation">
-            <!-- Reroute to MainPage and go to anchor with id #services -->
-            <router-link :to="{ name: 'MainPage', hash: '#services' }" class="navigation-text-element">{{ $t('mainPage.sluzby') }}</router-link>
-            
-            <router-link :to="{ name: 'MainPage', hash: '#references' }" class="navigation-text-element">{{ $t('mainPage.referencie') }}</router-link>
+        <div :class="isNavigationVisible ? 'navigation navigation-visible' : 'navigation'"
+            :style="{ 'transition': 'max-height ' + animationSpeed + ' ease-out' }">
 
-            <router-link :to="{ name: 'PortfolioPage' }" class="navigation-text-element">{{ $t('mainPage.portfolio') }}</router-link>
-            <router-link :to="{ name: 'ComputerPage' }" class="navigation-text-element">{{ $t('mainPage.pcZostavy') }}</router-link>
-            <router-link :to="{ name: 'LaptopPage' }" class="navigation-text-element">{{ $t('mainPage.notebooky') }}</router-link>
-            <router-link :to="{ name: 'MainPage', hash: '#about' }" class="navigation-text-element">{{ $t('mainPage.oMne') }}</router-link>
+
+            <router-link :to="{ name: 'MainPage', hash: '#services' }" @click="closeNavigation"
+                class="navigation-text-element">
+                {{ $t('mainPage.sluzby') }}</router-link>
+
+            <router-link :to="{ name: 'MainPage', hash: '#references' }" @click="closeNavigation"
+                class="navigation-text-element">
+                {{ $t('mainPage.referencie') }}</router-link>
+
+            <router-link :to="{ name: 'PortfolioPage' }" @click="closeNavigation" class="navigation-text-element">
+                {{ $t('mainPage.portfolio') }}</router-link>
+            <router-link :to="{ name: 'ComputerPage' }" @click="closeNavigation" class="navigation-text-element">
+                {{ $t('mainPage.pcZostavy') }}</router-link>
+            <router-link :to="{ name: 'LaptopPage' }" @click="closeNavigation" class="navigation-text-element">
+                {{ $t('mainPage.notebooky') }}</router-link>
+            <router-link :to="{ name: 'MainPage', hash: '#about' }" @click="closeNavigation"
+                class="navigation-text-element">
+                {{ $t('mainPage.oMne') }}</router-link>
         </div>
+
+        <div class="overlay" v-show="isNavigationVisible" @click="closeNavigation"></div>
+        <img @click="toggleNavigation" :src="isNavigationVisible ? closeButtonUrl : hamburgerMenuUrl"
+            class="hamburger-menu" />
     </div>
 </template>
 
 <script>
 import LanguageSwitcher from './LanguageSwitcher.vue';
+import hamburgerMenuIcon from '@/assets/hamburger_menu.png';
+import closeButtonIcon from '@/assets/close_button.png';
 
 export default {
     name: 'NavigationBar',
     components: {
         LanguageSwitcher,
-    }
+    },
+    data() {
+        return {
+            isNavigationVisible: false,
+            hamburgerMenuUrl: hamburgerMenuIcon,
+            closeButtonUrl: closeButtonIcon,
+            animationSpeed: '0.6s',
+        };
+    },
+    mounted() {
+        this.checkWindowSize();
+        window.addEventListener('resize', this.checkWindowSize);
+        this.$el.style.setProperty('--animation-speed', this.animationSpeed);
+    },
+    beforeUnmount() { // Use beforeDestroy() for Vue 2
+        window.removeEventListener('resize', this.checkWindowSize);
+    },
+    methods: {
+        checkWindowSize() {
+            this.isNavigationVisible = window.innerWidth > 900;
+        },
+        toggleNavigation() {
+            // Prevent toggling in desktop view
+            if (window.innerWidth <= 900) {
+                this.isNavigationVisible = !this.isNavigationVisible;
+            }
+        },
+        closeNavigation() {
+            this.isNavigationVisible = false;
+        },
+    },
 }
 </script>
 
@@ -41,18 +88,23 @@ export default {
     align-items: center;
     padding-top: 4rem;
 }
+
 .main-logo {
     color: #FFF;
     font-size: 2.5rem;
     font-weight: 600;
     margin-left: 5rem;
 }
+
 .navigation {
     display: inline-flex;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     gap: 2.3rem;
     margin-right: 5rem;
+    z-index: 1001;
 }
+
 .navigation-text-element {
     color: #FFF;
     text-shadow: 1px 6px 4px rgba(0, 0, 0, 0.50);
@@ -60,10 +112,88 @@ export default {
     font-style: normal;
     font-weight: 500;
 }
+
 .lang-switcher {
     position: absolute;
     right: 4.5rem;
     top: 2rem;
     z-index: 1001;
+}
+
+.mobile-menu {
+    display: none;
+    max-height: 0;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.893);
+    z-index: 999;
+}
+
+@media (max-width: 900px) {
+    .hamburger-menu {
+        position: absolute;
+        right: 2rem;
+        top: 2.5rem;
+        z-index: 1001;
+        cursor: pointer;
+    }
+
+    .navigation {
+        flex-direction: column;
+        gap: 1.5rem;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 5rem;
+        background-color: rgba(235, 0, 255, 0.16);
+        overflow: hidden;
+        max-height: 0;
+    }
+
+    .navigation-visible {
+        max-height: 800px;
+    }
+
+    .header {
+        display: block;
+    }
+
+    .lang-switcher {
+        right: 5rem;
+        top: 2.2rem;
+    }
+
+    .header {
+        padding-top: 1.4rem;
+    }
+
+    .main-logo {
+        margin-left: 2rem;
+    }
+}
+
+@media (min-width: 901px) {
+    .overlay {
+        display: none;
+    }
+
+    .navigation {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2.3rem;
+        margin-right: 5rem;
+        z-index: 1001;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
 }
 </style>

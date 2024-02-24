@@ -78,7 +78,7 @@ export default {
 .partner-container {
     position: relative;
     width: 16.875rem;
-    height: 6.975rem;
+    height: auto;
 }
 
 .partner {
@@ -104,5 +104,10 @@ export default {
 .fade-enter,
 .fade-leave-to {
     opacity: 0;
+}
+@media (max-width: 900px) {
+    .partner-container {
+        width: 10rem;
+    }
 }
 </style>

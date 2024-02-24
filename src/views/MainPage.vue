@@ -9,13 +9,17 @@
 
   <div class="main-page-buttons">
     <MainPageButton imageSrc="T_oprava_pocitacov a notebookov.png"
-    text="mainPage.opravaPC" :page="'oprava-pc-notebook-kosice'" topMargin="19rem" />
-    <MainPageButton imageSrc="T_skladanie_pocitacov.png" text="mainPage.skladaniePC" :page="'novy-pc-kosice'" topMargin="19rem" />
-    <MainPageButton imageSrc="T_Diagnostika.png" text="mainPage.diagnostika" :page="'servis-pc-notebook-kosice'" topMargin="19rem" />
+    text="mainPage.opravaPC" :page="'oprava-pc-notebook-kosice'" topMargin="19rem" topMarginMobile="70%"/>
+
+    <MainPageButton imageSrc="T_skladanie_pocitacov.png"
+    text="mainPage.skladaniePC" :page="'novy-pc-kosice'" topMargin="19rem" topMarginMobile="70%" />
+
+    <MainPageButton imageSrc="T_Diagnostika.png"
+    text="mainPage.diagnostika" :page="'servis-pc-notebook-kosice'" topMargin="19rem" topMarginMobile="70%" />
   </div>
   <SpacerComponent :space="'3rem'" id="services" />
   <div class="main-page-buttons">
-    <MainPageButton imageSrc="T_PC_Zostavy.png" text="mainPage.pcZostavy" page="pc-kosice" />
+    <MainPageButton imageSrc="T_PC_Zostavy.png" text="mainPage.pcZostavy" :page="'pc-kosice'" />
     <MainPageButton imageSrc="T_Notebooky.png" text="mainPage.notebooky" :page="'notebook-kosice'" />
     <MainPageButton imageSrc="T_Portfólio.png" text="mainPage.portfolio" :page="'portfolio-pc-servis-kosice'" />
   </div>
@@ -96,5 +100,14 @@ export default {
   gap: 2rem;
   max-width: 70%;
   margin: 0 auto;
+}
+@media (max-width: 900px) {
+  .main-logo-text-element {
+    letter-spacing: -0.1rem !important;
+  }
+  .main-page-buttons {
+    width: 90%;
+    gap: 3%;
+  }
 }
 </style>
