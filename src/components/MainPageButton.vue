@@ -68,8 +68,9 @@ export default {
     },
     handleResize() {
       this.windowWidth = window.innerWidth; // Update the windowWidth to trigger reactivity
-    }
+    },
   },
+  
 };
 </script>
   

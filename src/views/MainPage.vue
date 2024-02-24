@@ -9,13 +9,13 @@
 
   <div class="main-page-buttons">
     <MainPageButton imageSrc="T_oprava_pocitacov a notebookov.png"
-    text="mainPage.opravaPC" :page="'oprava-pc-notebook-kosice'" topMargin="19rem" topMarginMobile="70%"/>
+    text="mainPage.opravaPC" :page="'oprava-pc-notebook-kosice'" topMargin="19rem" topMarginMobile="73%"/>
 
     <MainPageButton imageSrc="T_Skladanie_02.png"
-    text="mainPage.skladaniePC" :page="'novy-pc-kosice'" topMargin="19rem" topMarginMobile="70%" />
+    text="mainPage.skladaniePC" :page="'novy-pc-kosice'" topMargin="19rem" topMarginMobile="73%" />
 
     <MainPageButton imageSrc="T_Diagnostika.png"
-    text="mainPage.diagnostika" :page="'servis-pc-notebook-kosice'" topMargin="19rem" topMarginMobile="70%" />
+    text="mainPage.diagnostika" :page="'servis-pc-notebook-kosice'" topMargin="19rem" topMarginMobile="73%" />
   </div>
   <SpacerComponent :space="'3rem'" id="services" />
   <div class="main-page-buttons">

@@ -166,7 +166,7 @@ export default {
 
     .lang-switcher {
         right: 5rem;
-        top: 2.2rem;
+        top: 2.4rem;
     }
 
     .header {
