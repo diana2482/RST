@@ -11,7 +11,7 @@
     <MainPageButton imageSrc="T_oprava_pocitacov a notebookov.png"
     text="mainPage.opravaPC" :page="'oprava-pc-notebook-kosice'" topMargin="19rem" topMarginMobile="70%"/>
 
-    <MainPageButton imageSrc="T_skladanie_pocitacov.png"
+    <MainPageButton imageSrc="T_Skladanie_02.png"
     text="mainPage.skladaniePC" :page="'novy-pc-kosice'" topMargin="19rem" topMarginMobile="70%" />
 
     <MainPageButton imageSrc="T_Diagnostika.png"
