@@ -1,6 +1,6 @@
 <template>
     <div class="header">
-        <router-link :to="{ name: 'MainPage' }" class="main-logo">RST.sk</router-link>
+        <router-link :to="{ name: 'MainPage' }"><img src="@/assets/T_RST_LOGO_05.png" class="main-logo" /></router-link>
 
         <LanguageSwitcher class="lang-switcher" />
 
@@ -90,10 +90,10 @@ export default {
 }
 
 .main-logo {
-    color: #FFF;
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin-left: 5rem;
+    position: absolute;
+    top: 2rem;
+    left: 4rem;
+    width: 7rem;
 }
 
 .navigation {
@@ -101,6 +101,7 @@ export default {
     justify-content: center;
     align-items: center;
     gap: 2.3rem;
+    margin-top: 1rem;
     margin-right: 5rem;
     z-index: 1001;
 }
@@ -143,7 +144,6 @@ export default {
         z-index: 1001;
         cursor: pointer;
     }
-
     .navigation {
         flex-direction: column;
         gap: 1.5rem;
@@ -155,26 +155,23 @@ export default {
         overflow: hidden;
         max-height: 0;
     }
-
     .navigation-visible {
         max-height: 800px;
     }
-
     .header {
         display: block;
     }
-
     .lang-switcher {
         right: 5rem;
         top: 2.4rem;
     }
-
     .header {
         padding-top: 1.4rem;
     }
-
     .main-logo {
-        margin-left: 2rem;
+        top: 1.5rem;
+        left: 2rem;
+        width: 4rem;
     }
 }
 
@@ -182,7 +179,6 @@ export default {
     .overlay {
         display: none;
     }
-
     .navigation {
         display: inline-flex;
         justify-content: center;
@@ -191,7 +187,6 @@ export default {
         margin-right: 5rem;
         z-index: 1001;
     }
-
     .hamburger-menu {
         display: none;
     }
