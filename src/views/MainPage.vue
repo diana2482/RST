@@ -1,4 +1,5 @@
 <template>
+  <div id="fb-root"></div>
   <div class="main-page-image-background">
     <div class="main-logo-text">
       <div class="main-logo-text-element" style="font-size: 3.9vw; height: 3.7vw;">{{ $t('mainPage.rychlejsie') }}</div>
@@ -34,16 +35,26 @@
     <PartnerComponent image="3dvision.png" text="mainPage.threeDVision" page="3dvision.com" />
   </div>
 
+  <SpacerComponent :space="'5rem'" />
+
   <div id="about" class="about-section">
+    <div class="fb-page" data-href="https://www.facebook.com/rstskservis" data-tabs="timeline" data-width=""
+      data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
+      data-show-facepile="true">
+      <blockquote cite="https://www.facebook.com/rstskservis" class="fb-xfbml-parse-ignore"><a
+          href="https://www.facebook.com/rstskservis">RST.sk</a></blockquote>
+    </div>
     <div class="text-container">
-    <p>{{ $t("mainPage.oMneText") }}</p>
-    <p>{{ $t("mainPage.kontakt") }}</p>
-    <a href="mailto:rst@rst.sk">rst@rst.sk</a><br>
-    <p>+421 948 600 109</p>
-  </div>
+      <p>{{ $t("mainPage.oMneText") }}</p>
+      <p>{{ $t("mainPage.kontakt") }}</p>
+      <p><a href="mailto:rst@rst.sk">rst@rst.sk</a></p>
+      <p>+421 948 600 109</p>
+    </div>
   </div>
 
-  <router-link to="privacy-policy">Privacy Policy</router-link>
+  <div style="min-height: 20rem;">
+    <router-link to="privacy-policy">Privacy Policy</router-link>
+  </div>
 </template>
 
 <script>
@@ -111,24 +122,36 @@ export default {
 
 .partners {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
   max-width: 70%;
   margin: 0 auto;
 }
+
 .about-section {
-  height: 30rem;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  height: auto;
 }
+
 .text-container {
   display: flex;
   flex-direction: column;
-  align-items: center; /* This will center the text horizontally */
+  align-items: center;
+  text-align: center;
+  margin: 0 1rem;
 }
+
+.fb-page {
+  min-width: 18rem;
+  margin: 0 1rem;
+}
+
 @media (max-width: 900px) {
   .main-logo-text-element {
     letter-spacing: -0.1rem !important;
@@ -138,5 +161,8 @@ export default {
     width: 90%;
     gap: 3%;
   }
-}
-</style>
+
+  .about-section {
+    flex-direction: column;
+  }
+}</style>

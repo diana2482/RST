@@ -107,7 +107,7 @@ export default {
 }
 @media (max-width: 900px) {
     .partner-container {
-        width: 10rem;
+        width: 9rem;
     }
 }
 </style>
