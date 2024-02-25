@@ -7,26 +7,33 @@
     <div class="slider" :class="{ 'slide-right': currentLanguage === 'en' }"></div>
   </div>
 </template>
-  
+
 <script>
+import Cookies from 'js-cookie';
+
 export default {
   data() {
     return {
-      currentLanguage: this.$i18n.locale,
+      // Initialize currentLanguage from a cookie, or default to the i18n locale
+      currentLanguage: Cookies.get('userLanguage') || this.$i18n.locale,
     };
   },
   methods: {
     toggleLanguage() {
-      this.currentLanguage = this.currentLanguage === 'sk' ? 'en' : 'sk';
-      // Update the i18n locale
-      this.$i18n.locale = this.currentLanguage;
+      const newLang = this.currentLanguage === 'sk' ? 'en' : 'sk';
+      this.setLanguage(newLang);
+    },
+    setLanguage(newLang) {
+      this.$i18n.locale = newLang;
+      this.currentLanguage = newLang;
+      if (this.$cookies.get('userConsent') === 'accepted'){
+
+        Cookies.set('userLanguage', newLang, { expires: 365, sameSite: 'Lax' });
+      }
     },
   },
-  watch: {
-    // Reactively watch for i18n locale changes
-    '$i18n.locale'(newLocale) {
-      this.currentLanguage = newLocale;
-    },
+  mounted() {
+    this.setLanguage(this.currentLanguage);
   },
 };
 </script>

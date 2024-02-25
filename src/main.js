@@ -1,9 +1,10 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
-import i18n from './i18n'; 
+import { createApp } from 'vue';
+import App from './App.vue';
+import router from './router';
+import i18n from './i18n';
+import VueCookies from 'vue-cookies';
 
-createApp(App)
-.use(router)
-.use(i18n)
-.mount('#app')
+const app = createApp(App);
+
+
+app.use(router).use(VueCookies).use(i18n).mount('#app');

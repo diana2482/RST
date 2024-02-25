@@ -1,16 +1,20 @@
 <template>
   <NavigationBar />
   <router-view />
+  <CookiePopup />
 </template>
 
 <script>
-import NavigationBar from './components/NavigationBar.vue'
+import NavigationBar from './components/NavigationBar.vue';
+import CookiePopup from './components/CookiePopup.vue'; // Import CookiePopup component
+
 export default {
   components: {
-    NavigationBar
+    NavigationBar,
+    CookiePopup // Register CookiePopup component
   },
   name: 'App',
-}
+};
 </script>
 
 <style>
@@ -29,15 +33,12 @@ export default {
 
 html,
 body {
-  /* position: relative; */
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   background-image: url('assets/T_Background.jpg');
   -ms-overflow-style: none;
-  /* IE and Edge */
   scrollbar-width: none;
-  /* Firefox */
 }
 body::-webkit-scrollbar {
   display: none;

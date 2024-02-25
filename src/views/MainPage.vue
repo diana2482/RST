@@ -2,20 +2,21 @@
   <div class="main-page-image-background">
     <div class="main-logo-text">
       <div class="main-logo-text-element" style="font-size: 3.9vw; height: 3.7vw;">{{ $t('mainPage.rychlejsie') }}</div>
-      <div class="main-logo-text-element" style="font-size: 5vw; letter-spacing: -0.3rem; height: 5.2vw;">{{ $t('mainPage.spolahlivejsie') }}</div>
+      <div class="main-logo-text-element" style="font-size: 5vw; letter-spacing: -0.3rem; height: 5.2vw;">{{
+        $t('mainPage.spolahlivejsie') }}</div>
       <div class="main-logo-text-element" style="font-size: 3.65vw; height: 3.65vw;">{{ $t('mainPage.tichsie') }}</div>
     </div>
   </div>
 
   <div class="main-page-buttons">
-    <MainPageButton imageSrc="T_oprava_pocitacov a notebookov.png"
-    text="mainPage.opravaPC" :page="'oprava-pc-notebook-kosice'" topMargin="19rem" topMarginMobile="73%"/>
+    <MainPageButton imageSrc="T_oprava_pocitacov a notebookov.png" text="mainPage.opravaPC"
+      :page="'oprava-pc-notebook-kosice'" topMargin="19rem" topMarginMobile="73%" />
 
-    <MainPageButton imageSrc="T_Skladanie_02.png"
-    text="mainPage.skladaniePC" :page="'novy-pc-kosice'" topMargin="19rem" topMarginMobile="73%" />
+    <MainPageButton imageSrc="T_Skladanie_02.png" text="mainPage.skladaniePC" :page="'novy-pc-kosice'" topMargin="19rem"
+      topMarginMobile="73%" />
 
-    <MainPageButton imageSrc="T_Diagnostika.png"
-    text="mainPage.diagnostika" :page="'servis-pc-notebook-kosice'" topMargin="19rem" topMarginMobile="73%" />
+    <MainPageButton imageSrc="T_Diagnostika.png" text="mainPage.diagnostika" :page="'servis-pc-notebook-kosice'"
+      topMargin="19rem" topMarginMobile="73%" />
   </div>
   <SpacerComponent :space="'3rem'" id="services" />
   <div class="main-page-buttons">
@@ -29,11 +30,13 @@
   <div id="references" class="partners">
     <PartnerComponent image="game_days.png" text="mainPage.gameDays" page="gamedays.sk" />
     <PartnerComponent image="games_farm.png" text="mainPage.gamesFarm" page="games-farm.com" />
-    <PartnerComponent image="triple_hill.png" text="mainPage.tripleHill" page="triple-hill.com" />  
-    <PartnerComponent image="3dvision.png" text="mainPage.threeDVision" page="3dvision.com" />    
+    <PartnerComponent image="triple_hill.png" text="mainPage.tripleHill" page="triple-hill.com" />
+    <PartnerComponent image="3dvision.png" text="mainPage.threeDVision" page="3dvision.com" />
   </div>
 
   <div id="about" style="height: 30rem"></div>
+
+  <router-link to="privacy-policy">Privacy Policy</router-link>
 </template>
 
 <script>
@@ -53,18 +56,21 @@ export default {
 
 <style>
 .main-page-image-background {
-    display: flex;
-    width: 100vw;
-    height: 0; /* Start with zero height */
-    padding-top: 69%; /* Adjust the percentage based on the image's aspect ratio */
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url('../assets/Header_computer.jpg');
-    background-size: cover;
-    background-position: top;
-    position: relative;
+  display: flex;
+  width: 100vw;
+  height: 0;
+  /* Start with zero height */
+  padding-top: 69%;
+  /* Adjust the percentage based on the image's aspect ratio */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../assets/Header_computer.jpg');
+  background-size: cover;
+  background-position: top;
+  position: relative;
 }
+
 .main-logo-text {
   position: absolute;
   left: 36vw;
@@ -74,15 +80,18 @@ export default {
   align-items: flex-start;
   height: 100%;
 }
+
 .main-logo-text-element {
   text-shadow: 1px 6px 4px rgba(0, 0, 0, 0.50);
   font-style: normal;
   font-weight: 550;
-  line-height: normal; /* 7.0625rem */
+  line-height: normal;
+  /* 7.0625rem */
   letter-spacing: -0.23rem;
   /* margin-top: -2.8125rem; */
   margin: 0;
 }
+
 .main-page-buttons {
   display: flex;
   justify-content: center;
@@ -92,7 +101,8 @@ export default {
   width: 45rem;
   margin: 0 auto;
 }
-.partners{
+
+.partners {
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
@@ -101,13 +111,14 @@ export default {
   max-width: 70%;
   margin: 0 auto;
 }
+
 @media (max-width: 900px) {
   .main-logo-text-element {
     letter-spacing: -0.1rem !important;
   }
+
   .main-page-buttons {
     width: 90%;
     gap: 3%;
   }
-}
-</style>
+}</style>

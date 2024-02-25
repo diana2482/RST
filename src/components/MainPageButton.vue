@@ -95,9 +95,7 @@ export default {
   transition: opacity 0.4s ease;
   /* Masking */
   -webkit-mask-image: url('../assets/T_PC_Zostavy.png');
-  /* Safari */
   mask-image: url('../assets/T_PC_Zostavy.png');
-  /* Standard */
   mask-size: cover;
 }
 
