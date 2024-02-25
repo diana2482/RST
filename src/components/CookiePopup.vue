@@ -1,8 +1,8 @@
 <template>
     <div v-if="showPopup" class="cookie-consent-popup">
       <div class="cookie-consent-content">
-        <p>We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.
-            <router-link to="/privacy-policy">Read our <u>GDPR policy</u>.</router-link></p>
+        <p>{{ $t("cookies.info") }}
+            <router-link to="/privacy-policy"><u>{{$t("cookies.policy")}}</u>.</router-link></p>
         
         <button @click="acceptCookies" class="cookies-button">Accept</button>
         <button @click="rejectCookies" class="cookies-button">Reject</button>
@@ -36,14 +36,13 @@ export default {
 };
 </script>
 
-
 <style>
 .cookie-consent-popup {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.594);
+  background-color: rgba(0, 0, 0, 0.702);
   z-index: 1000;
 }
 

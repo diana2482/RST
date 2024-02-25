@@ -10,21 +10,21 @@
 
             <router-link :to="{ name: 'MainPage', hash: '#services' }" @click="closeNavigation"
                 class="navigation-text-element">
-                {{ $t('mainPage.sluzby') }}</router-link>
+                {{ $t('navigationBar.sluzby') }}</router-link>
 
             <router-link :to="{ name: 'MainPage', hash: '#references' }" @click="closeNavigation"
                 class="navigation-text-element">
-                {{ $t('mainPage.referencie') }}</router-link>
+                {{ $t('navigationBar.referencie') }}</router-link>
 
             <router-link :to="{ name: 'PortfolioPage' }" @click="closeNavigation" class="navigation-text-element">
-                {{ $t('mainPage.portfolio') }}</router-link>
+                {{ $t('navigationBar.portfolio') }}</router-link>
             <router-link :to="{ name: 'ComputerPage' }" @click="closeNavigation" class="navigation-text-element">
-                {{ $t('mainPage.pcZostavy') }}</router-link>
+                {{ $t('navigationBar.pcZostavy') }}</router-link>
             <router-link :to="{ name: 'LaptopPage' }" @click="closeNavigation" class="navigation-text-element">
-                {{ $t('mainPage.notebooky') }}</router-link>
+                {{ $t('navigationBar.notebooky') }}</router-link>
             <router-link :to="{ name: 'MainPage', hash: '#about' }" @click="closeNavigation"
                 class="navigation-text-element">
-                {{ $t('mainPage.oMne') }}</router-link>
+                {{ $t('navigationBar.oMne') }}</router-link>
         </div>
 
         <div class="overlay" v-show="isNavigationVisible" @click="closeNavigation"></div>

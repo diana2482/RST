@@ -20,9 +20,9 @@
   </div>
   <SpacerComponent :space="'3rem'" id="services" />
   <div class="main-page-buttons">
-    <MainPageButton imageSrc="T_PC_Zostavy.png" text="mainPage.pcZostavy" :page="'pc-kosice'" />
-    <MainPageButton imageSrc="T_Notebooky.png" text="mainPage.notebooky" :page="'notebook-kosice'" />
-    <MainPageButton imageSrc="T_Portfólio.png" text="mainPage.portfolio" :page="'portfolio-pc-servis-kosice'" />
+    <MainPageButton imageSrc="T_PC_Zostavy.png" text="navigationBar.pcZostavy" :page="'pc-kosice'" />
+    <MainPageButton imageSrc="T_Notebooky.png" text="navigationBar.notebooky" :page="'notebook-kosice'" />
+    <MainPageButton imageSrc="T_Portfólio.png" text="navigationBar.portfolio" :page="'portfolio-pc-servis-kosice'" />
   </div>
 
   <SpacerComponent :space="'5rem'" />
@@ -34,7 +34,14 @@
     <PartnerComponent image="3dvision.png" text="mainPage.threeDVision" page="3dvision.com" />
   </div>
 
-  <div id="about" style="height: 30rem"></div>
+  <div id="about" class="about-section">
+    <div class="text-container">
+    <p>{{ $t("mainPage.oMneText") }}</p>
+    <p>{{ $t("mainPage.kontakt") }}</p>
+    <a href="mailto:rst@rst.sk">rst@rst.sk</a><br>
+    <p>+421 948 600 109</p>
+  </div>
+  </div>
 
   <router-link to="privacy-policy">Privacy Policy</router-link>
 </template>
@@ -111,7 +118,17 @@ export default {
   max-width: 70%;
   margin: 0 auto;
 }
-
+.about-section {
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* This will center the text horizontally */
+}
 @media (max-width: 900px) {
   .main-logo-text-element {
     letter-spacing: -0.1rem !important;
@@ -121,4 +138,5 @@ export default {
     width: 90%;
     gap: 3%;
   }
-}</style>
+}
+</style>

@@ -6,8 +6,7 @@
 
     <div class="main-page-button-text" :style="textStyle">{{ translatedText }}</div>
   </div>
-</template>
-  
+</template>  
   
 <script>
 export default {

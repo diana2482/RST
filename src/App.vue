@@ -6,12 +6,12 @@
 
 <script>
 import NavigationBar from './components/NavigationBar.vue';
-import CookiePopup from './components/CookiePopup.vue'; // Import CookiePopup component
+import CookiePopup from './components/CookiePopup.vue';
 
 export default {
   components: {
     NavigationBar,
-    CookiePopup // Register CookiePopup component
+    CookiePopup,
   },
   name: 'App',
 };
