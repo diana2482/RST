@@ -1,6 +1,31 @@
 <template>
     <div class="header">
-        <router-link :to="{ name: 'MainPage' }"><img src="@/assets/T_RST_LOGO_05.png" class="main-logo" /></router-link>
+        <router-link :to="{ name: 'MainPage' }" class="image-wrapper">
+        <img 
+            class="main-logo default-logo" 
+            :src="defaultImgSrc"
+        />
+        <img 
+            class="main-logo hover-logo" 
+            :src="hoverImgSrc"
+            @mouseover="hover = true" 
+            @mouseleave="hover = false"
+        />
+        </router-link>
+        <router-link :to="{ name: 'MainPage' }" class="image-wrapper">
+        <img 
+            class="main-logo default-logo" 
+            :src="defaultImgSrc"
+        />
+        <img 
+            class="main-logo hover-logo" 
+            :src="require('@/assets/T_RST_LOGO_08.png')"
+            @mouseover="hover = true" 
+            @mouseleave="hover = false"
+        />
+        </router-link>
+
+
 
         <LanguageSwitcher class="lang-switcher" />
 
@@ -35,8 +60,6 @@
 
 <script>
 import LanguageSwitcher from './LanguageSwitcher.vue';
-import hamburgerMenuIcon from '@/assets/hamburger_menu.png';
-import closeButtonIcon from '@/assets/close_button.png';
 
 export default {
     name: 'NavigationBar',
@@ -46,15 +69,20 @@ export default {
     data() {
         return {
             isNavigationVisible: false,
-            hamburgerMenuUrl: hamburgerMenuIcon,
-            closeButtonUrl: closeButtonIcon,
+            hamburgerMenuUrl: require('@/assets/hamburger_menu.png'),
+            closeButtonUrl: require('@/assets/close_button.png'),
             animationSpeed: '0.6s',
+            // Import and assign images directly
+            defaultImgSrc: require('@/assets/T_RST_LOGO_07.png'),
+            hoverImgSrc: require('@/assets/T_RST_LOGO_06.png'),
+            currentImgSrc: '', // Will be set on component mount
         };
     },
     mounted() {
         this.checkWindowSize();
         window.addEventListener('resize', this.checkWindowSize);
         this.$el.style.setProperty('--animation-speed', this.animationSpeed);
+        this.currentImgSrc = this.defaultImgSrc;
     },
     beforeUnmount() { // Use beforeDestroy() for Vue 2
         window.removeEventListener('resize', this.checkWindowSize);
@@ -88,14 +116,29 @@ export default {
     align-items: center;
     padding-top: 4rem;
 }
+.image-wrapper {
+    position: relative;
+    /* display: inline-block; */
+}
 
 .main-logo {
     position: absolute;
-    top: 2rem;
+    top: -50px;
     left: 4rem;
     width: 7rem;
+    transition: opacity 0.3s ease;
 }
 
+.hover-logo {
+    opacity: 0; /* Make the hover image fully transparent by default */
+}
+
+.image-wrapper:hover .hover-logo {
+    opacity: 1; /* Make the hover image fully opaque on hover */
+}
+.main-logo:hover {
+    animation: all 0.5s ease;
+}
 .navigation {
     display: inline-flex;
     justify-content: center;

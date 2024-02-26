@@ -67,8 +67,8 @@ const messages = {
       info: 'We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.',
       policy: 'GDPR policy',
       accept: 'Accept',
-      reject: 'Reject',    }
-    
+      reject: 'Reject',    
+    }    
   },
   // Add other languages here
 };
