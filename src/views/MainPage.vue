@@ -40,7 +40,7 @@
   <div id="about" class="about-section">
     <div class="fb-page" data-href="https://www.facebook.com/rstskservis" data-tabs="timeline" data-width=""
       data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
-      data-show-facepile="true">
+      data-show-facepile="true" target="_blank">
       <blockquote cite="https://www.facebook.com/rstskservis" class="fb-xfbml-parse-ignore"><a
           href="https://www.facebook.com/rstskservis">RST.sk</a></blockquote>
     </div>
@@ -130,23 +130,25 @@ export default {
 
 .about-section {
   display: flex;
-  flex-direction: row;
+  flex-direction: row; /* Default to row for larger screens */
   justify-content: center;
-  align-items: center;
+  align-items: center; /* Align to the start to handle different heights */
   flex-wrap: wrap;
-  height: auto;
+  padding: 2rem;
 }
 
 .text-container {
+  flex: 1; /* Takes up the remaining space */
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin: 0 1rem;
+  
+  align-items: center; /* Align text to the start */
+  text-align: justify; /* Align text to the left */
+  max-width: 500px; /* Max width for the text container */
 }
 
 .fb-page {
-  min-width: 18rem;
+  width: 350px;
   margin: 0 1rem;
 }
 
@@ -154,13 +156,23 @@ export default {
   .main-logo-text-element {
     letter-spacing: -0.1rem !important;
   }
-
   .main-page-buttons {
     width: 90%;
     gap: 3%;
   }
-
   .about-section {
     flex-direction: column;
   }
-}</style>
+
+  .text-container, .fb-page {
+    align-items: center; /* Center-align for mobile */
+    text-align: center; /* Text center for mobile */
+    max-width: 100%; /* Allow full width on mobile */
+    margin: 1rem 0; /* Add vertical margin for mobile */
+  }
+  
+  .fb-page {
+    width: 250px; /* Remove min-width on mobile for full width */
+  }
+}
+</style>

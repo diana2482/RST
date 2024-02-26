@@ -34,7 +34,12 @@ const messages = {
       policy: 'GDPR',
       accept: 'Súhlasiť',
       reject: 'Odmietnuť',
-    }
+    },
+    footer: {
+      created: 'Created by:',
+      design: 'Designed by:',
+      privacy: 'Privacy policy',
+    } 
   },
   en: {
     navigationBar: {
