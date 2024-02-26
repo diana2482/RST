@@ -91,15 +91,13 @@ const router = createRouter({
     } else if (to.hash) {
       return new Promise(resolve => {
         // Adjust the delay and duration as needed
-        smoothScrollTo(to.hash, 400, 600); 
+        smoothScrollTo(to.hash, 400, 700); 
         resolve(); // No position is returned because scrolling is handled by smoothScrollTo
       });
     } else {
       return { x: 0, y: 0 };
     }
   },
-  
-  
 });
 
 export default router;

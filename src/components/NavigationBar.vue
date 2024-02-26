@@ -12,26 +12,11 @@
             @mouseleave="hover = false"
         />
         </router-link>
-        <router-link :to="{ name: 'MainPage' }" class="image-wrapper">
-        <img 
-            class="main-logo default-logo" 
-            :src="defaultImgSrc"
-        />
-        <img 
-            class="main-logo hover-logo" 
-            :src="require('@/assets/T_RST_LOGO_08.png')"
-            @mouseover="hover = true" 
-            @mouseleave="hover = false"
-        />
-        </router-link>
-
-
 
         <LanguageSwitcher class="lang-switcher" />
 
         <div :class="isNavigationVisible ? 'navigation navigation-visible' : 'navigation'"
             :style="{ 'transition': 'max-height ' + animationSpeed + ' ease-out' }">
-
 
             <router-link :to="{ name: 'MainPage', hash: '#services' }" @click="closeNavigation"
                 class="navigation-text-element">
@@ -118,9 +103,7 @@ export default {
 }
 .image-wrapper {
     position: relative;
-    /* display: inline-block; */
 }
-
 .main-logo {
     position: absolute;
     top: -50px;
@@ -128,16 +111,14 @@ export default {
     width: 7rem;
     transition: opacity 0.3s ease;
 }
-
 .hover-logo {
     opacity: 0; /* Make the hover image fully transparent by default */
 }
-
 .image-wrapper:hover .hover-logo {
     opacity: 1; /* Make the hover image fully opaque on hover */
 }
 .main-logo:hover {
-    animation: all 0.5s ease;
+    animation: all 0.3s ease;
 }
 .navigation {
     display: inline-flex;
@@ -148,7 +129,6 @@ export default {
     margin-right: 5rem;
     z-index: 1001;
 }
-
 .navigation-text-element {
     color: #FFF;
     text-shadow: 1px 6px 4px rgba(0, 0, 0, 0.50);
@@ -156,19 +136,16 @@ export default {
     font-style: normal;
     font-weight: 500;
 }
-
 .lang-switcher {
     position: absolute;
     right: 4.5rem;
     top: 2rem;
     z-index: 1001;
 }
-
 .mobile-menu {
     display: none;
     max-height: 0;
 }
-
 .overlay {
     position: fixed;
     top: 0;
@@ -178,7 +155,6 @@ export default {
     background-color: rgba(0, 0, 0, 0.893);
     z-index: 999;
 }
-
 @media (max-width: 900px) {
     .hamburger-menu {
         position: absolute;
@@ -217,7 +193,6 @@ export default {
         width: 4rem;
     }
 }
-
 @media (min-width: 901px) {
     .overlay {
         display: none;

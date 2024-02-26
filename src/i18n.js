@@ -34,6 +34,11 @@ const messages = {
       policy: 'GDPR policia',
       accept: 'Accept',
       reject: 'Reject',
+    },
+    footer: {
+      created: 'Created by:',
+      design: 'Designed by:',
+      privacy: 'Privacy policia',
     }
   },
   en: {
@@ -67,8 +72,13 @@ const messages = {
       info: 'We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.',
       policy: 'GDPR policy',
       accept: 'Accept',
-      reject: 'Reject',    
-    }    
+      reject: 'Reject', 
+    },
+    footer: {
+      created: 'ENCreated by:',
+      design: 'Designed by:',
+      privacy: 'Privacy policy',
+    } 
   },
   // Add other languages here
 };

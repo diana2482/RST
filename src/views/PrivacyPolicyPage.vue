@@ -5,7 +5,7 @@
       compliance framework in order to fulfil our responsibilities to protect your Personal Data. Therefore, this privacy
       policy (the&nbsp;<strong>“Privacy Policy</strong>”) is intended to inform you about our practices regarding the
       collection and use of your Personal Data that you may submit to us through our website&nbsp;<a
-        href="https://web.archive.org/web/20211122160105/http://www.gamedays.sk/">https://gamedays.sk/</a>&nbsp;(the
+        href="rst.sk">rst.sk</a>&nbsp;(the
       “<strong>Website</strong>”).</p>
     <p>The Website is operated by our company Grindstone s.r.o., with its registered seat at Pekná 13, Košice 040 01,
       Slovak Republic, Id.no.: 48 258 121 (“<strong>Grindstone</strong>” or “<strong>we</strong>“, “<strong>us</strong>”
@@ -51,7 +51,7 @@
     <p><strong>Making sure Personal Data is accurate</strong></p>
     <p>Keeping your Personal Data accurate and up to date is very important. If your Personal Data is incomplete,
       inaccurate or not current, please contact us at&nbsp;<a
-        href="https://web.archive.org/web/20211122160105/mailto:hello@gamedays.sk">hello@gamedays.sk</a>.</p>
+        href="mailto:rst@rst.sk">rst@rst.sk</a>.</p>
     <p></p>
     <p><strong>Personal Data We Collect<br></strong><u>How do we collect Personal Data online?</u></p>
     <p>We collect Personal Data about you through your computer, smartphone, tablet or other mobile device by the use of
@@ -135,7 +135,7 @@
   <p></p>
   <p><strong>Access and Opt-Out</strong></p>
   <p>If your Personal Data changes, or if you no longer desire our service, you may correct, update, amend, delete or
-    ask to have it removed from a public forum or directory by contacting us at hello@gamedays.sk. We will respond
+    ask to have it removed from a public forum or directory by contacting us at rst@rst.sk. We will respond
     within a reasonable timeframe. We will retain and use your information as necessary to comply with our legal
     obligations, resolve disputes, and enforce our agreements.</p>
   <p>If at any time you would like to stop receiving promotional emails from us, you may opt out of receiving these
@@ -181,7 +181,7 @@
     details about the categories or specific pieces of Personal Data the covered business collects, (ii) the right to
     delete their Personal Data, (iii) the right to opt out of any sale of such Personal Data that may be occurring, and
     (iv) the right to not be discriminated against for exercising these rights.</p>
-  <p>To contact us with questions about the CCPA, please send an email to hello@gamedays.sk.&nbsp;</p>
+  <p>To contact us with questions about the CCPA, please send an email to rst@rst.sk.&nbsp;</p>
   <p></p>
   <p><strong>Consent to Processing and Transfer of Your Personal Data</strong></p>
   <p>If you use the Website, or otherwise provide us with data, from outside the United States, you acknowledge and
@@ -202,14 +202,14 @@
     technical, legal and organisational measures to ensure that the level of protection is the same as in the European
     Union and the European Economic Area. If you wish to know more about international transfers of your Personal Data
     and the appropriate safeguards that we have in place to govern the transfer of your personal data, you may contact
-    us at hello@gamedays.sk.</p>
+    us at rst@rst.sk.</p>
   <p><u>Legal Basis and Purpose for Processing Personal Data under GDPR</u></p>
   <p>We may process certain Personal Data on the legal basis and for the specific purposes as described below:</p>
   <p>On the legal basis of&nbsp;<strong>you giving us your consent&nbsp;</strong>when singing up on our Website, we may
     process your email address&nbsp;<strong>for the purpose</strong>&nbsp;of marketing activities, sending you
     newsletters, marketing or promotional materials and other information that may be of interest to you. You may
     opt-out of receiving any, or all, of these communications from us by following the unsubscribe link or instructions
-    provided in any email we send or by contacting us at hello@gamedays.sk.sk.</p>
+    provided in any email we send or by contacting us at rst@rst.sk.</p>
   <p>On the legal basis of&nbsp;<strong>you giving us your consent</strong>&nbsp;when accepting the cookies setting on
     the Website, we may process the applicable Personal Data collected with the help of cookies&nbsp;<strong>for the
       purpose&nbsp;</strong>of improving our Website, for analytical and marketing/advertising purposes.</p>
@@ -264,14 +264,14 @@
   <p></p>
   <p><u>Exercising of Your GDPR Data Protection Rights</u></p>
   <p>You may exercise your rights of access, rectification, cancellation and opposition by contacting us at
-    hello@gamedays.sk. Please note that we may ask you to verify your identity before responding to such requests. If
+    rst@rst.sk. Please note that we may ask you to verify your identity before responding to such requests. If
     you make a request, we will try our best to respond to you as soon as possible.</p>
   <p>You have the right to complain to a Data Protection Authority about our collection and use of your Personal Data.
     For more information, if you are in the European Economic Area (EEA), please contact your local data protection
     authority in the EEA</p>
   <p><strong>&nbsp;</strong></p>
   <p><strong>Questions about this Privacy Policy – Contact Us</strong></p>
-  <p>If you have any questions or concerns about this Privacy Policy, please contact us at<br>hello@gamedays.sk.</p>
+  <p>If you have any questions or concerns about this Privacy Policy, please contact us at<br>rst@rst.sk.</p>
   <p>Mailing address: Pekná 13, Košice 040 01, Slovak Republic</p>
   <p>Telephone: +421 905 397 017</p>
 </div></template>

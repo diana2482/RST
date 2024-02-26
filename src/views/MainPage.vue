@@ -52,9 +52,7 @@
     </div>
   </div>
 
-  <div style="min-height: 20rem;">
-    <router-link to="privacy-policy">Privacy Policy</router-link>
-  </div>
+  <SpacerComponent :space="'5rem'" />
 </template>
 
 <script>
