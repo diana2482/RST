@@ -130,21 +130,21 @@ export default {
 
 .about-section {
   display: flex;
-  flex-direction: row; /* Default to row for larger screens */
+  flex-direction: row;
   justify-content: center;
-  align-items: center; /* Align to the start to handle different heights */
+  align-items: center;
   flex-wrap: wrap;
   padding: 2rem;
 }
 
 .text-container {
-  flex: 1; /* Takes up the remaining space */
+  flex: 1;
   display: flex;
   flex-direction: column;
   
-  align-items: center; /* Align text to the start */
-  text-align: justify; /* Align text to the left */
-  max-width: 500px; /* Max width for the text container */
+  align-items: center;
+  text-align: justify;
+  max-width: 500px;
 }
 
 .fb-page {
@@ -165,14 +165,14 @@ export default {
   }
 
   .text-container, .fb-page {
-    align-items: center; /* Center-align for mobile */
-    text-align: center; /* Text center for mobile */
-    max-width: 100%; /* Allow full width on mobile */
-    margin: 1rem 0; /* Add vertical margin for mobile */
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    margin: 1rem 0;
   }
   
   .fb-page {
-    width: 250px; /* Remove min-width on mobile for full width */
+    width: 250px;
   }
 }
 </style>
