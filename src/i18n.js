@@ -24,13 +24,13 @@ const messages = {
       gameDays: 'gamedays je uzasny event urcite tam treba ist kazdy rok',
       gamesFarm: 'duri najlepsi zamestnanec',
       tripleHill: 'daliborko milovany',
-      threeDVision: '3D',
+      threeDVision: 'Pre mňa TOP firma keď si chcem nechať poskladať počítač, odbornosť, profesionalita, ochota poradiť, jednoducho odporúčam! CEO Peter Adamčík',
       // about me
       oMneText: 'Môj záujem o počítače a súvisiace technológie sa formoval od mojej mladosti. S viac ako 15-ročnou skúsenosťou v IT sektore som nadobudol vedomosti a zručnosti, ktoré aplikujem v každom aspekte práce. Ku každému projektu pristupujem s dôkladnosťou a starostlivosťou, aby som zabezpečil, že každá požiadavka je splnená na najvyššej možnej úrovni.',
       kontakt: 'Napíšte mi alebo zavolajte, osobné konzultácie robím v rámci Košíc.'      
     },
     cookies: {
-      info: 'Používame súbory cookies na zlepšenie vášho zážitku. Súhlasom s naším používaním súborov cookies vyjadrujete súhlas s ich použitím.',
+      info: 'Používame súbory cookies na zlepšenie Vášho zážitku. Súhlasom s naším používaním súborov cookies vyjadrujete súhlas s ich použitím.',
       policy: 'GDPR',
       accept: 'Súhlasiť',
       reject: 'Odmietnuť',
@@ -63,10 +63,10 @@ const messages = {
       gameDays: 'gamedays in inglish',
       gamesFarm: 'duri najlepsi zamestnanec',
       tripleHill: 'daliborko milovany',
-      threeDVision: '3D',
+      threeDVision: 'For me, a TOP company when I want to have a computer assembled, expertise, professionalism, willingness to advise, I simply recommend. CEO Peter Adamčík',
       // about me
       oMneText: 'My enthusiasm for computers and related technology has been a driving force since my youth. Over the span of more than 15 years in the IT sector, Ive honed my skills and expertise. This wealth of experience informs every aspect of my work, ensuring that each project is approached with precision and care. I am dedicated to providing users with an exceptional experience tailored to their needs.',
-      kontakt: 'Dont hesitate to call or text me, I conduct personal consultations within the Košice region .'
+      kontakt: 'Dont hesitate to call or text me, I conduct personal consultations within the Košice region.'
     },
     cookies: {
       info: 'We use cookies to enhance your experience. By agreeing to our use of cookies, you consent to their use.',
