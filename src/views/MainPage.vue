@@ -134,7 +134,7 @@ export default {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 2rem;
+  padding: 0 2rem;
 }
 
 .text-container {
