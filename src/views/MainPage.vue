@@ -12,16 +12,14 @@
   <div class="main-page-buttons">
     <MainPageButton imageSrc="T_oprava_pocitacov a notebookov.png" text="mainPage.opravaPC"
       :page="'oprava-pc-notebook-kosice'" topMargin="19rem" topMarginMobile="73%" />
-
     <MainPageButton imageSrc="T_Skladanie_02.png" text="mainPage.skladaniePC" :page="'novy-pc-kosice'" topMargin="19rem"
       topMarginMobile="73%" />
-
-    <MainPageButton imageSrc="T_Diagnostika.png" text="mainPage.diagnostika" :page="'servis-pc-notebook-kosice'"
-      topMargin="19rem" topMarginMobile="73%" />
+    <MainPageButton imageSrc="T_PC_Zostavy.png" text="navigationBar.pcZostavy" :page="'pc-kosice'" topMargin="19rem"
+     topMarginMobile="73%" />
   </div>
   <SpacerComponent :space="'3rem'" id="services" />
   <div class="main-page-buttons">
-    <MainPageButton imageSrc="T_PC_Zostavy.png" text="navigationBar.pcZostavy" :page="'pc-kosice'" />
+    <MainPageButton imageSrc="T_Diagnostika.png" text="mainPage.diagnostika" :page="'servis-pc-notebook-kosice'"/>
     <MainPageButton imageSrc="T_Notebooky.png" text="navigationBar.notebooky" :page="'notebook-kosice'" />
     <MainPageButton imageSrc="T_Portfólio.png" text="navigationBar.portfolio" :page="'portfolio-pc-servis-kosice'" />
   </div>
@@ -32,7 +30,7 @@
     <PartnerComponent image="game_days.png" text="mainPage.gameDays" page="gamedays.sk" />
     <PartnerComponent image="games_farm.png" text="mainPage.gamesFarm" page="games-farm.com" />
     <PartnerComponent image="triple_hill.png" text="mainPage.tripleHill" page="triple-hill.com" />
-    <PartnerComponent image="3dvision.png" text="mainPage.threeDVision" page="3dvision.com" />
+    <PartnerComponent image="3dvision.png" text="mainPage.threeDVision" page="3division.sovietrepublic.net" />
   </div>
 
   <SpacerComponent :space="'5rem'" />

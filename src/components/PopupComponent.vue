@@ -2,7 +2,7 @@
     <div class="popup-background" @click.stop="handlePopupClick">
         <div style="height: 7rem;"></div>
         <div class="popup-text">{{ text }}</div>
-        <a class="popup-link" :href="formattedPage">{{ page }}</a>
+        <a class="popup-link" :href="formattedPage" target="_blank">{{ page }}</a>
     </div>
 </template>
 

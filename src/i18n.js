@@ -7,7 +7,7 @@ const messages = {
       sluzby: 'Služby',
       referencie: 'Referencie',
       portfolio: 'Portfólio',
-      pcZostavy: 'PC zostavy',
+      pcZostavy: 'Údržba počítačov a notebookov',
       notebooky: 'Notebooky',
       oMne: 'O mne',
     },

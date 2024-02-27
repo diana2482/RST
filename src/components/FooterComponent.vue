@@ -1,6 +1,7 @@
 <template>
     <footer class="footer">
-        <span>{{ $t("footer.created") }} Dianka | {{ $t("footer.design") }} Daliborko</span>
+        <span>{{ $t("footer.created") }} <a href="https://www.linkedin.com/in/diana-or%C5%A1olyov%C3%A1-099292276/" target="_blank">Diana Oršolyová</a>
+             | {{ $t("footer.design") }} <a href="https://www.artstation.com/daliborjancura" target="_blank">Dalibor Jancura</a></span>
         <div class="social-icons">
             <a href="https://www.facebook.com/rstskservis" target="_blank">
                 <img src="@/assets/facebook.png" alt="Facebook" class="icon" />
