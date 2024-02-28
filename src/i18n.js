@@ -30,7 +30,7 @@ const messages = {
       kontakt: 'Napíšte mi alebo zavolajte, osobné konzultácie robím v rámci Košíc.'
     },
     computerPage: {
-      p1: 'Navrhnem a zostavím zariadenie podľa Vašich predstáv a potrieb. Dôraz prikladám na kvalitu vyhotovenia zostavy a testovanie v záťaži pre záruku plnej funkčnosti od momentu prvého zapojenia.'
+      p1: 'Návrh - realizácia - testovanie - podpora po odovzdaní.'
     },
     laptopPage: {
       p1: "V notebookoch nemá zákazník až tak voľnú ruku voľby konkrétnych komponentov ako pri skladaní počítača na mieru. To ale neznamená že si nevieme vybrať lepší, kvalitnejší a trvácnejší. Nie vždy je to o priamom výkone a nie vždy mojim zákaznikom odporúčam vôbec vymeniť ich notebook.",
