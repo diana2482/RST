@@ -54,7 +54,9 @@ const messages = {
       p4: 'Samozrejme, nie je prekážkou ani to, ak bol počítač skladaný niekým iným. Veľmi rád sa na to pozriem a navrhnem prípadne zlepšenia ak to situácia vyžaduje.',
     },
     diagnosticsPage: {
-      p1: 'Pri kúpe použitého počítača, notebooku alebo iných komponentov je dobré si predom overiť 100% funkčnosť. Vyhnete sa dodatočným neočakávaným investíciám a prípadným problémom. Pri predaji Vám viem poskytnúť prvotnú prípravu zariadenia pre bezproblémový predaj.',
+      p1: 'Diagnostika pomáha riešiť ale aj prechádzať problémom.',
+      p2: 'Pri kúpe použitého počítača, notebooku alebo iných komponentov je dobré si predom overiť 100% funkčnosť. Vyhnete sa dodatočným neočakávaným investíciám a prípadným problémom.',
+      p3: 'Zároveň, ak plánujete predať svoj počítač je dobré ho na predaj pripraviť tak, aby bolo všetko pretestované, prečistené s dokladmi o stabilite daného zariadenia.',
     },
     cookies: {
       info: 'Používame súbory cookies na zlepšenie Vášho zážitku. Súhlasom s naším používaním súborov cookies vyjadrujete súhlas s ich použitím.',
