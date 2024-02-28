@@ -30,7 +30,7 @@ const messages = {
       kontakt: 'Napíšte mi alebo zavolajte, osobné konzultácie robím v rámci Košíc.'
     },
     computerPage: {
-      p1: 'Návrh - realizácia - testovanie - podpora po odovzdaní.'
+      p1: 'Návrh - realizácia - testovanie - podpora po odovzdaní.',
       p2: 'Návrh zostavy je o získaní informácii dôležitých informácii od vás ktoré budú základovým kameňom pre celú zostavu. Na základe vyšpecifikovania vašich požiadaviek ako napríklad - na čo bude počítač slúžiť, aké konkrétne špecifické vlastnosti má spĺnať, a podobne. Spoločnou diskusiou dôjdeme k finálnemu návrhu a po odsúhlasení nasleduje ďalšia etapa',
       p3: 'Realizácia. Pod tým si jednoducho môžete predstaviť metodické, precízne a s ohľadom na efektivitu a estetiku skladanie počítača. Môže to znieť až prehnane, ale, je dôležité pochopiť že ako každý človek, tak kaźdý jeho počítač je unikát. V tomto čase vás sem tam poteším fotkou z procesu, prípadne preberieme nejaké drobnosti ako napríklad či si krabice odkladáte alebo to zrecyklujeme a podobne.',
       p4: 'Testovanie je pre mňa osobne tou najdôležitejšou častou samotnej realizácie. Jednak tomu predchádza vyladenie BIOSu a Windowsu no za druhé si dokonale a dôkladne overujem funkčnosť a najmä spoľahlivosť daných komponentov. Kaźdému komponentu venujem hodiny času aby som si bol istý že váš zážitok bude bez akejkoľvek prekážky alebo prestoja.',
