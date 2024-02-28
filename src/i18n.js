@@ -48,7 +48,10 @@ const messages = {
       p3: 'Dôležitou súčasťou opravy je použitie kvalitných náhradných dielov. Tým sa zaručí trvácnosť a spoľahlivosť zariadenia na ďalšie dlhé obdobie.',
     },
     newComputerPage: {
-      p1: 'Navrhnem a zostavím zariadenie podľa Vašich predstáv a potrieb. Dôraz prikladám na kvalitu vyhotovenia zostavy a testovanie v záťaži pre záruku plnej funkčnosti od momentu prvého zapojenia.'
+      p1: 'S údržbou zariadenia je to veľmi podobné starostlivosti o seba. Viete sa o počítač starať, čistiť ho sám a raz za rok či dva zabehnúť ho dať profesionálne prebehnúť.',
+      p2: 'Je u mňa samozrejmosťou že pri preberaní vašej novej zostavy si spolu prebehneme presne postup čistenia a údržby. Kde sú prachové filtre, ako sa vyberajú, čo môže pomôcť a čo naopak uškodí a kumuluje prach v počítači.',
+      p3: 'V dokonalom svete sa tento postup dodrží a vy sa môžete tešiť dlhodobo tichému a výkonnému stroju. Samozrejme, v živote to nie vždy ide tak, ako si predstavujeme a vtedy vám rád pomôžem.',
+      p4: 'Samozrejme nie je prekážkou ani to, ak bol počítač skladaný niekým iným. Veľmi rád sa na to pozriem a navrhnem prípadne zlepšenia ak to situácia vyžaduje.',
     },
     diagnosticsPage: {
       p1: 'Pri kúpe použitého počítača, notebooku alebo iných komponentov je dobré si predom overiť 100% funkčnosť. Vyhnete sa dodatočným neočakávaným investíciám a prípadným problémom. Pri predaji Vám viem poskytnúť prvotnú prípravu zariadenia pre bezproblémový predaj.',
