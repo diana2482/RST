@@ -4,6 +4,8 @@
             :page="'oprava-pc-notebook-kosice'" topMargin="73%" :doHoverAnimation="false" class="page-button" />
         <div>
             <p>{{ $t("repairPage.p1") }}</p>
+            <p>{{ $t("repairPage.p2") }}</p>
+            <p>{{ $t("repairPage.p3") }}</p>
         </div>
     </div>
 </template>
