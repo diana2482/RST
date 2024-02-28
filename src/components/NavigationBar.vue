@@ -1,9 +1,10 @@
 <template>
-    <div class="header">
+    <header class="header">
         <router-link :to="{ name: 'MainPage' }" class="image-wrapper">
         <img 
             class="main-logo default-logo" 
             :src="defaultImgSrc"
+            alt="RST"
         />
         <img 
             class="main-logo hover-logo" 
@@ -28,10 +29,10 @@
 
             <router-link :to="{ name: 'PortfolioPage' }" @click="closeNavigation" class="navigation-text-element">
                 {{ $t('navigationBar.portfolio') }}</router-link>
-            <router-link :to="{ name: 'ComputerPage' }" @click="closeNavigation" class="navigation-text-element">
+            <!-- <router-link :to="{ name: 'ComputerPage' }" @click="closeNavigation" class="navigation-text-element">
                 {{ $t('navigationBar.pcZostavy') }}</router-link>
             <router-link :to="{ name: 'LaptopPage' }" @click="closeNavigation" class="navigation-text-element">
-                {{ $t('navigationBar.notebooky') }}</router-link>
+                {{ $t('navigationBar.notebooky') }}</router-link> -->
             <router-link :to="{ name: 'MainPage', hash: '#about' }" @click="closeNavigation"
                 class="navigation-text-element">
                 {{ $t('navigationBar.oMne') }}</router-link>
@@ -40,7 +41,7 @@
         <div class="overlay" v-show="isNavigationVisible" @click="closeNavigation"></div>
         <img @click="toggleNavigation" :src="isNavigationVisible ? closeButtonUrl : hamburgerMenuUrl"
             class="hamburger-menu" />
-    </div>
+    </header>
 </template>
 
 <script>
@@ -69,7 +70,7 @@ export default {
         this.$el.style.setProperty('--animation-speed', this.animationSpeed);
         this.currentImgSrc = this.defaultImgSrc;
     },
-    beforeUnmount() { // Use beforeDestroy() for Vue 2
+    beforeUnmount() {
         window.removeEventListener('resize', this.checkWindowSize);
     },
     methods: {
@@ -132,7 +133,7 @@ export default {
 .navigation-text-element {
     color: #FFF;
     text-shadow: 1px 6px 4px rgba(0, 0, 0, 0.50);
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-style: normal;
     font-weight: 500;
 }

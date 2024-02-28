@@ -1,18 +1,51 @@
 <template>
     <div class="posts">
-    <PostComponent title="Prvy post" date="34. januara 2084"
-        description="toto je uzasny post taky uzasny ze svet sa zastavi lorem ipsum lorem ipsum" />
-    <PostComponent title="Prvy post" date="34. januara 2084"
-        description="toto je uzasny post taky uzasny ze svet sa zastavi lorem ipsum lorem ipsum" />
+        <PostComponent v-for="postData in postsData" :key="postData.id" :title="localizedText(postData, 'title')"
+            :date="localizedText(postData, 'date')" :description="localizedText(postData, 'description')"
+            :imagePath="`post${postData.id}`" />
     </div>
 </template>
 
 <script>
 import PostComponent from '@/components/PostComponent.vue';
+
 export default {
     name: 'PortfolioPage',
     components: {
         PostComponent,
+    },
+    data() {
+        return {
+            postsData: [],
+        }
+    },
+    methods: {
+        async loadPostsData() {
+            for (let i = 1; i <= 2; i++) {
+                try {
+                    let dataModule = await import(`@/assets/posts/post${i}/data.js`);
+                    const postData = {
+                        ...dataModule.default,
+                        id: i,
+                    };
+                    this.postsData.push(postData);
+                } catch (e) {
+                    console.error(`Failed to load data for post${i}:`, e);
+                }
+            }
+        },
+
+        localizedText(postData, field) {
+            const currentLocale = this.$i18n.locale;
+            if (postData[currentLocale] && postData[currentLocale][field]) {
+                return postData[currentLocale][field];
+            }
+            return postData['sk'][field]; // Assuming 'sk' is the default/fallback language
+        },
+    }, mounted() {
+        this.loadPostsData().then(() => {
+            this.postsData.forEach(post => console.log(post.id));
+        });
     },
 }
 </script>

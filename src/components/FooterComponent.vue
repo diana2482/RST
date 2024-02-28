@@ -20,7 +20,7 @@ export default {
 }
 </script>
   
-<style>
+<style scoped>
 .footer {
     position: relative;
     left: 0;
@@ -57,4 +57,8 @@ export default {
         padding: 1rem;
         gap: 5rem;
     }
-}</style>
+}
+span a {
+    color: #f7a4ff;
+}
+</style>

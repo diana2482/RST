@@ -1,6 +1,6 @@
 <template>
   <div class="main-page-button" @mouseover="hover = true" @mouseleave="hover = false" @click="navigate">
-    <img :src="require('@/assets/' + imageSrc)" class="main-page-button-image">
+    <img :src="require('@/assets/' + imageSrc)" class="main-page-button-image" alt="sluzbyPCServis">
 
     <img :src="require('@/assets/T_Hover.png')" class="main-page-button-hover">
 

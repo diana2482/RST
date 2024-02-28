@@ -21,10 +21,10 @@ const messages = {
       skladaniePC: 'Skladanie počítačov',
       diagnostika: 'Diagnostika',
       // partners, references
-      gameDays: 'S RST.sk spolupracujeme na organizácii konferencie Game Days ale aj mimo nej posledné tri roky. Vďaka svedomitosti a precíznosti p. Baksyho vieme, že sa na náš hardvér a softvér môžeme vždy spoľahnúť. Kvalita jeho práce v pomere k cenám za jeho služby je bezkonkurenčná. CPO Matej Hudák',
+      gameDays: 'S RST.sk spolupracujeme na organizácii konferencie Game Days ale aj mimo nej posledné tri roky. Vďaka svedomitosti a precíznosti p. Baksyho vieme, že sa na náš hardvér a softvér môžeme vždy spoľahnúť. Kvalita jeho práce v pomere k cenám za jeho služby je bezkonkurenčná.<br><br><b>CPO Matej Hudák</b>',
       gamesFarm: 'duri najlepsi zamestnanec',
-      tripleHill: 'RST.sk pre nás zabezpečuje všetku techniku a nemenili by sme. Viackrát nás už zachránili pred nešťastným nákupom komponentov, či vyriešili problém na ktorý sme nevedeli prísť. Absolútne skvelý návrh, stavba a servis akejkoľvek IT techniky. Vrelo odporúčam! CEO Peter Adamondy',
-      threeDVision: 'Pre mňa TOP firma keď si chcem nechať poskladať počítač, odbornosť, profesionalita, ochota poradiť, jednoducho odporúčam! CEO Peter Adamčík',
+      tripleHill: 'RST.sk pre nás zabezpečuje všetku techniku a nemenili by sme. Viackrát nás už zachránili pred nešťastným nákupom komponentov, či vyriešili problém na ktorý sme nevedeli prísť. Absolútne skvelý návrh, stavba a servis akejkoľvek IT techniky. Vrelo odporúčam!<br><br><b>CEO Peter Adamondy</b>',
+      threeDVision: 'Pre mňa TOP firma keď si chcem nechať poskladať počítač, odbornosť, profesionalita, ochota poradiť, jednoducho odporúčam!<br><br><b>CEO Peter Adamčík</b>',
       // about me
       oMneText: 'Môj záujem o počítače a súvisiace technológie sa formoval od mojej mladosti. S viac ako 15-ročnou skúsenosťou v IT sektore som nadobudol vedomosti a zručnosti, ktoré aplikujem v každom aspekte práce. Ku každému projektu pristupujem s dôkladnosťou a starostlivosťou, aby som zabezpečil, že každá požiadavka je splnená na najvyššej možnej úrovni.',
       kontakt: 'Napíšte mi alebo zavolajte, osobné konzultácie robím v rámci Košíc.'      

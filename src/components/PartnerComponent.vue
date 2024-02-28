@@ -1,8 +1,8 @@
 <template>
     <div class="partner-container" @click="togglePopup">
-        <img :src="require('@/assets/' + image)" class="partner" />
-        <div>{{ translatedText }}</div>
-        <a class="partner-link" :href="formattedPage" target="_blank">{{ page }}</a>
+        <img :src="require('@/assets/' + image)" class="partner" alt="PartnerRST"/>
+        <div v-html="translatedText"></div>
+        <div class="partner-link"><a :href="formattedPage" target="_blank">{{ page }}</a></div>
     </div>
     
 </template>
@@ -41,20 +41,22 @@ export default {
 <style>
 .partner-container {
     position: relative;
-    width: 16.875rem;
+    width: 14rem;
     height: auto;
-    text-align: justify;
+    text-align: center;
 }
 .partner {
     width: 100%;
     height: 100%;
 }
-.partner-link {
-    float: center !important;
+.partner-link a{
+    text-align: center !important;
+    color: #f7a4ff;
 }
 @media (max-width: 900px) {
     .partner-container {
-        width: 7rem;
+        width: 18rem;
+        margin-bottom: 3rem;
     }
 }
 </style>

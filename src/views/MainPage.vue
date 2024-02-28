@@ -57,8 +57,24 @@
 import MainPageButton from '@/components/MainPageButton.vue';
 import SpacerComponent from '@/components/SpacerComponent.vue';
 import PartnerComponent from '@/components/PartnerComponent.vue';
+import { useHead } from '@vueuse/head';
 
 export default {
+  setup() {
+    useHead({
+      title: 'RST - Rýchlejšie, spoľahlivejšie, tichšie',
+      meta: [
+        {
+          name: 'description',
+          content: 'Servis, Skladanie počítačových zostáv na mieru. Oprava počítačov a notebookov. Košice',
+        },
+        {
+          name: 'keywords',
+          content: 'pc, pocitac, servis, kosice, košice, oprava, notebook, zostava, skladanie, rýchlejšie, spoľahlivejšie, tichšie, rýchlejšie spoľahlivejšie tichšie, rst, rstservis, rst.sk, rst servis, rst.sk servis, rst.sk servis košice, rst.sk košice, rst.sk servis pc košice, rst.sk servis',
+        },
+      ],
+    })
+  },
   name: 'MainPage',
   components: {
     MainPageButton,
@@ -118,7 +134,7 @@ export default {
 
 .partners {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
