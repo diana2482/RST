@@ -1,4 +1,4 @@
-// src/assets/posts/post1/data.js
+// src/assets/posts/post2/data.js
 export default {
     sk: {
       title: "druhy post",

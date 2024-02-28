@@ -2,7 +2,7 @@ import { createI18n } from 'vue-i18n';
 
 // Messages object containing all translations
 const messages = {
-  sk: {    
+  sk: {
     navigationBar: {
       sluzby: 'Služby',
       referencie: 'Referencie',
@@ -27,7 +27,22 @@ const messages = {
       threeDVision: 'Pre mňa TOP firma keď si chcem nechať poskladať počítač, odbornosť, profesionalita, ochota poradiť, jednoducho odporúčam!<br><br><b>CEO Peter Adamčík</b>',
       // about me
       oMneText: 'Môj záujem o počítače a súvisiace technológie sa formoval od mojej mladosti. S viac ako 15-ročnou skúsenosťou v IT sektore som nadobudol vedomosti a zručnosti, ktoré aplikujem v každom aspekte práce. Ku každému projektu pristupujem s dôkladnosťou a starostlivosťou, aby som zabezpečil, že každá požiadavka je splnená na najvyššej možnej úrovni.',
-      kontakt: 'Napíšte mi alebo zavolajte, osobné konzultácie robím v rámci Košíc.'      
+      kontakt: 'Napíšte mi alebo zavolajte, osobné konzultácie robím v rámci Košíc.'
+    },
+    laptopPage: {
+      p1: "V notebookoch nemá zákazník až tak voľnú ruku voľby konkrétnych komponentov ako pri skladaní počítača na mieru. To ale neznamená že si nevieme vybrať lepší, kvalitnejší a trvácnejší. Nie vždy je to o priamom výkone a nie vždy mojim zákaznikom odporúčam vôbec vymeniť ich notebook.",
+      p2: 'Stretávam sa často s podobnými problémami - pomalosť systému, trhanie, prehrievanie. Táto situácia zvyčajne vedie zákazníka ku vyhľadávaniu nového notebooku. No, som názoru že je vždy lepšie dané zariadenie vylepšiť alebo dať do stavu "ako nový" (zvyčajne až do lepšieho stavu po technickej stránke) než sa ho zbavovať a kupovať nový. ',
+      p3: "Samozrejme aj v prípade kúpy nového notebooku rád poradím a vyhľadám taký aby bol zákazník nie len spokojný s jeho výkonom, kvalitou a prevedením. Ale, aby bol spokojný aj počas celého života notebooku ktorý pri správnej starostlivosti vydrží o dosť dlhšie ako je jeho záručná doba.",
+      p4: "Servisovanie notebooku nie je niečo čoho by ste sa mali obávať. Práve naopak, pravidelná starostlivosť so sebou nesie iba benefity. Zariadenie ide svižnejšie, vydrží dlhšie a najmä sa vyhnete náročným (ako finančne tak aj časovo) opravám alebo predčasnej kúpe nového zariadenia. ",
+    },
+    repairPage: {
+      p1: 'Každý stroj si zaslúži druhú šancu. Nech už sa jedná o akútnu poruchu alebo dlhodobé problémy (napr. prehrievanie, nadmerná hlučnosť), pocit spomaleného zariadenia alebo estetickú vadu.',
+    },
+    newComputerPage: {
+      p1: 'Navrhnem a zostavím zariadenie podľa Vašich predstáv a potrieb. Dôraz prikladám na kvalitu vyhotovenia zostavy a testovanie v záťaži pre záruku plnej funkčnosti od momentu prvého zapojenia.'
+    },
+    diagnosticsPage: {
+      p1: 'Pri kúpe použitého počítača, notebooku alebo iných komponentov je dobré si predom overiť 100% funkčnosť. Vyhnete sa dodatočným neočakávaným investíciám a prípadným problémom. Pri predaji Vám viem poskytnúť prvotnú prípravu zariadenia pre bezproblémový predaj.',
     },
     cookies: {
       info: 'Používame súbory cookies na zlepšenie Vášho zážitku. Súhlasom s naším používaním súborov cookies vyjadrujete súhlas s ich použitím.',
@@ -39,7 +54,7 @@ const messages = {
       created: 'Created by:',
       design: 'Designed by:',
       privacy: 'Privacy policy',
-    } 
+    }
   },
   en: {
     navigationBar: {
@@ -72,13 +87,13 @@ const messages = {
       info: 'We use cookies to enhance your experience. By agreeing to our use of cookies, you consent to their use.',
       policy: 'GDPR policy',
       accept: 'Accept',
-      reject: 'Reject', 
+      reject: 'Reject',
     },
     footer: {
       created: 'ENCreated by:',
       design: 'Designed by:',
       privacy: 'Privacy policy',
-    } 
+    }
   },
   // Add other languages here
 };
