@@ -7,6 +7,7 @@
             <div v-for="(imageName, index) in actualImageNames" :key="imageName" class="image-container">
                 <img :src="getImagePath(imageName)" class="post-image" alt="Post" @click="openModal(index)" />
             </div>
+            <div v-if="allActualImages.length > 4 && showModal == false" @click="openModal(3)" class="plus">+</div>
         </div>
         <div v-if="showModal" class="modal">
             <button class="close" @click="closeModal">&times;</button>
@@ -146,7 +147,7 @@ export default {
     align-items: center;
     gap: 0.2rem;
     border-radius: 1.875rem;
-    border: 0.5px solid #EB00FF;
+    border: 1px solid #EB00FF;
 }
 
 .text-element {
@@ -162,9 +163,28 @@ export default {
 }
 
 .image-container {
-    width: 50%;
-    padding-top: 50%;
+    border: 1px solid white;
+    width: 49%;
+    padding-top: 49%;
     position: relative;
+}
+
+.plus {
+    position: absolute;
+    width: 49%;
+    height: 49%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(133, 133, 133);
+    font-size: 5rem;
+    font-weight: 100 !important;
+    bottom: 0;
+    right: 0;
+    transform: translate(-3%, -2%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    cursor: pointer;
 }
 
 .post-image {
@@ -186,6 +206,11 @@ export default {
 .images {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+    /* This ensures that the .plus div can be absolutely positioned within it */
+    align-items: flex-start;
+    align-content: flex-start;
 }
 
 .modal {
@@ -264,5 +289,7 @@ button {
         padding-left: 1rem;
         padding-right: 1rem;
     }
-}
-</style>
+    .plus {
+        font-size: 15vw;
+    }
+}</style>
