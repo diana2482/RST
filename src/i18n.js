@@ -43,7 +43,9 @@ const messages = {
       p4: "Servisovanie notebooku nie je niečo čoho by ste sa mali obávať. Práve naopak, pravidelná starostlivosť so sebou nesie iba benefity. Zariadenie ide svižnejšie, vydrží dlhšie a najmä sa vyhnete náročným (ako finančne tak aj časovo) opravám alebo predčasnej kúpe nového zariadenia. ",
     },
     repairPage: {
-      p1: 'Každý stroj si zaslúži druhú šancu. Nech už sa jedná o akútnu poruchu alebo dlhodobé problémy (napr. prehrievanie, nadmerná hlučnosť), pocit spomaleného zariadenia alebo estetickú vadu.',
+      p1: 'Každý stroj si zaslúži druhú šancu.',
+      p2: 'V dnešnej dobe je jednak z ekonomického ale aj ekologického hľadiska sa vždy zamyslieť či nemá zmysel opraviť dané zariadenie. Najmä ak sa jedná o notebook, môže jeho repasovanie častokrát zlepšiť funkčnosť natoľko že pominie dôvod na kúpu nového modelu.',
+      p3: 'Dôležitou súčasťou opravy je použitie kvalitných náhradných dielov. Tým sa zaručí trvácnosť a spoľahlivosť zariadenia na ďalšie dlhé obdobie.',
     },
     newComputerPage: {
       p1: 'Navrhnem a zostavím zariadenie podľa Vašich predstáv a potrieb. Dôraz prikladám na kvalitu vyhotovenia zostavy a testovanie v záťaži pre záruku plnej funkčnosti od momentu prvého zapojenia.'
