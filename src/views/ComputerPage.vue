@@ -4,9 +4,10 @@
             :page="'pc-kosice'" topMargin="73%" :doHoverAnimation="false" class="page-button" />
         <div>
         <p>{{ $t("computerPage.p1") }}</p>
-            <p>{{ $t("computerPage.p2") }}</p>
-            <p>{{ $t("computerPage.p3") }}</p>
-            <p>{{ $t("computerPage.p4") }}</p>
+        <p>{{ $t("computerPage.p2") }}</p>
+        <p>{{ $t("computerPage.p3") }}</p>
+        <p>{{ $t("computerPage.p4") }}</p>
+        <p>{{ $t("computerPage.p5") }}</p>
         </div>
     </div>
 </template>
