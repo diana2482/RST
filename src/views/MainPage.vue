@@ -15,11 +15,11 @@
     <MainPageButton imageSrc="T_Skladanie_02.png" text="mainPage.skladaniePC" :page="'novy-pc-kosice'" topMargin="19rem"
       topMarginMobile="73%" />
     <MainPageButton imageSrc="T_PC_Zostavy.png" text="navigationBar.pcZostavy" :page="'pc-kosice'" topMargin="19rem"
-     topMarginMobile="73%" />
+      topMarginMobile="73%" />
   </div>
   <SpacerComponent :space="'3rem'" id="services" />
   <div class="main-page-buttons">
-    <MainPageButton imageSrc="T_Diagnostika.png" text="mainPage.diagnostika" :page="'servis-pc-notebook-kosice'"/>
+    <MainPageButton imageSrc="T_Diagnostika.png" text="mainPage.diagnostika" :page="'servis-pc-notebook-kosice'" />
     <MainPageButton imageSrc="T_Notebooky.png" text="navigationBar.notebooky" :page="'notebook-kosice'" />
     <MainPageButton imageSrc="T_Portfólio.png" text="navigationBar.portfolio" :page="'portfolio-pc-servis-kosice'" />
   </div>
@@ -36,16 +36,18 @@
   <SpacerComponent :space="'5rem'" />
 
   <div id="about" class="about-section">
-    <div class="fb-page" data-href="https://www.facebook.com/rstskservis" data-tabs="timeline" data-width=""
-      data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
-      data-show-facepile="true" target="_blank">
-      <blockquote cite="https://www.facebook.com/rstskservis" class="fb-xfbml-parse-ignore"><a
-          href="https://www.facebook.com/rstskservis">RST.sk</a></blockquote>
-    </div>
     <div class="text-container">
       <p>{{ $t("mainPage.oMneText") }}</p>
       <p>{{ $t("mainPage.kontakt") }}</p>
       <p><a href="mailto:rst@rst.sk">rst@rst.sk</a></p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/rstskservis" target="_blank">
+          <img src="@/assets/facebook.png" alt="Facebook" class="icon" />
+        </a>
+        <a href="https://www.instagram.com/rstskservis/" target="_blank">
+          <img src="@/assets/instagram.png" alt="Instagram" class="icon" />
+        </a>
+      </div>
       <p>+421 948 600 109</p>
     </div>
   </div>
@@ -155,9 +157,9 @@ export default {
   flex: 1;
   display: flex;
   flex-direction: column;
-  
+
   align-items: center;
-  text-align: justify;
+  text-align: center;
   max-width: 500px;
 }
 
@@ -166,25 +168,42 @@ export default {
   margin: 0 1rem;
 }
 
+.social-icons {
+  /* position: absolute; */
+  left: 50%;
+  /* transform: translateX(-50%); */
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.icon {
+  width: 2rem;
+  height: auto;
+}
+
 @media (max-width: 900px) {
   .main-logo-text-element {
     letter-spacing: -0.1rem !important;
   }
+
   .main-page-buttons {
     width: 90%;
     gap: 3%;
   }
+
   .about-section {
     flex-direction: column;
   }
 
-  .text-container, .fb-page {
+  .text-container,
+  .fb-page {
     align-items: center;
     text-align: center;
     max-width: 100%;
     margin: 1rem 0;
   }
-  
+
   .fb-page {
     width: 250px;
   }

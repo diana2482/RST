@@ -53,6 +53,9 @@ export default {
     text-align: center !important;
     color: #f7a4ff;
 }
+.partner-link a:hover {
+    color: white;
+}
 @media (max-width: 900px) {
     .partner-container {
         width: 18rem;

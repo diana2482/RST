@@ -41,8 +41,8 @@ export default {
     data() {
         return {
             // Assuming you know these are the potential images
-            potentialImageNames: ['image1.png', 'image2.png', 'image3.png', 'image4.png',
-                'image5.png', 'image6.png', 'image7.png', 'image8.png', 'image9.png', 'image10.png'],
+            potentialImageNames: ['image1.jpg', 'image2.jpg', 'image3.jpg', 'image4.jpg',
+                'image5.jpg', 'image6.jpg', 'image7.jpg', 'image8.jpg', 'image9.jpg', 'image10.jpg'],
             actualImageNames: [],
             allActualImages: [],
             showModal: false,
@@ -146,7 +146,7 @@ export default {
     align-items: center;
     gap: 0.2rem;
     border-radius: 1.875rem;
-    border: 3px solid #EB00FF;
+    border: 0.5px solid #EB00FF;
 }
 
 .text-element {
