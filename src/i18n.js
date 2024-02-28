@@ -31,6 +31,10 @@ const messages = {
     },
     computerPage: {
       p1: 'Návrh - realizácia - testovanie - podpora po odovzdaní.'
+      p2: 'Návrh zostavy je o získaní informácii dôležitých informácii od vás ktoré budú základovým kameňom pre celú zostavu. Na základe vyšpecifikovania vašich požiadaviek ako napríklad - na čo bude počítač slúžiť, aké konkrétne špecifické vlastnosti má spĺnať, a podobne. Spoločnou diskusiou dôjdeme k finálnemu návrhu a po odsúhlasení nasleduje ďalšia etapa',
+      p3: 'Realizácia. Pod tým si jednoducho môžete predstaviť metodické, precízne a s ohľadom na efektivitu a estetiku skladanie počítača. Môže to znieť až prehnane, ale, je dôležité pochopiť že ako každý človek, tak kaźdý jeho počítač je unikát. V tomto čase vás sem tam poteším fotkou z procesu, prípadne preberieme nejaké drobnosti ako napríklad či si krabice odkladáte alebo to zrecyklujeme a podobne.',
+      p4: 'Testovanie je pre mňa osobne tou najdôležitejšou častou samotnej realizácie. Jednak tomu predchádza vyladenie BIOSu a Windowsu no za druhé si dokonale a dôkladne overujem funkčnosť a najmä spoľahlivosť daných komponentov. Kaźdému komponentu venujem hodiny času aby som si bol istý že váš zážitok bude bez akejkoľvek prekážky alebo prestoja.',
+      p5: 'Podpora po odovzdaní. Odovzdaním zostavy to u mňa nekončí. Akýkoľvek problém či hneď po zapojení alebo pár dní po užívaní budeme spoločne riešiť. Sem tam sa môže vyskytnúť špecifický problém s konkrétnym programom ktorý je u daného človeka využívaný a jeho dianie spôsobuje nestabilitu. Preto, vždy po určitom krátkom čase od odovzdania sa aj ja sám ozvem vám, aby som sa uisti že je všetko presne tak, ako sme sa dohodli a počítač napĺňa všetky očakávania.',
     },
     laptopPage: {
       p1: "V notebookoch nemá zákazník až tak voľnú ruku voľby konkrétnych komponentov ako pri skladaní počítača na mieru. To ale neznamená že si nevieme vybrať lepší, kvalitnejší a trvácnejší. Nie vždy je to o priamom výkone a nie vždy mojim zákaznikom odporúčam vôbec vymeniť ich notebook.",
