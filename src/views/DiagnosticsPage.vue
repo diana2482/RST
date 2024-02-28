@@ -1,10 +1,15 @@
 <template>
     <div class="centered-text">
+        <MainPageButton imageSrc="T_Diagnostika.png" text="mainPage.diagnostika" :page="'servis-pc-notebook-kosice'" topMargin="82%"
+            class="page-button" :doHoverAnimation="false" />
+        <div>
         <p>{{ $t("diagnosticsPage.p1") }}</p>
+        </div>
     </div>
 </template>
 
 <script>
+import MainPageButton from '@/components/MainPageButton.vue';
 import { useHead } from '@vueuse/head';
 export default {
     name: 'DiagnosticsPage',
@@ -23,6 +28,9 @@ export default {
             ],
         })
     },
+    components: {
+        MainPageButton,
+    }
 }
 </script>
 

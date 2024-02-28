@@ -1,10 +1,15 @@
 <template>
     <div class="centered-text">
+        <MainPageButton imageSrc="T_PC_Zostavy.png" text="navigationBar.pcZostavy"
+            :page="'pc-kosice'" topMargin="73%" :doHoverAnimation="false" class="page-button" />
+        <div>
         <p>{{ $t("computerPage.p1") }}</p>
+        </div>
     </div>
 </template>
 
 <script>
+import MainPageButton from '@/components/MainPageButton.vue';
 import { useHead } from '@vueuse/head';
 export default {
     name: 'ComputerPage',
@@ -23,6 +28,9 @@ export default {
             ],
         })
     },
+    components: {
+        MainPageButton,
+    }
 }
 </script>
 

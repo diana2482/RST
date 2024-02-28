@@ -1,13 +1,18 @@
 <template>
     <div class="centered-text">
-        <p>{{ $t("laptopPage.p1") }}</p>
-        <p>{{ $t("laptopPage.p2") }}</p>
-        <p>{{ $t("laptopPage.p3") }}</p>
-        <p>{{ $t("laptopPage.p4") }}</p>
+        <MainPageButton imageSrc="T_Notebooky.png" text="navigationBar.notebooky" :page="'notebook-kosice'" topMargin="82%"
+            class="page-button" :doHoverAnimation="false" />
+        <div>
+            <p>{{ $t("laptopPage.p1") }}</p>
+            <p>{{ $t("laptopPage.p2") }}</p>
+            <p>{{ $t("laptopPage.p3") }}</p>
+            <p>{{ $t("laptopPage.p4") }}</p>
+        </div>
     </div>
 </template>
 
 <script>
+import MainPageButton from '@/components/MainPageButton.vue';
 import { useHead } from '@vueuse/head';
 export default {
     name: 'LaptopPage',
@@ -26,24 +31,10 @@ export default {
             ],
         })
     },
+    components: {
+        MainPageButton,
+    }
 }
 </script>
 
-<style>
-.centered-text {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 1.5rem;
-    padding: 10rem 25vw;
-    text-align: center;
-    min-height: 58vh;
-}
-
-@media (max-width: 900px) {
-    .centered-text {
-        padding: 10rem 1rem;
-    }
-}
-</style>
+<style></style>
