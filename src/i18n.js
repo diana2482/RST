@@ -44,7 +44,7 @@ const messages = {
     },
     repairPage: {
       p1: 'Každý stroj si zaslúži druhú šancu.',
-      p2: 'V dnešnej dobe je jednak z ekonomického ale aj ekologického hľadiska sa vždy zamyslieť či nemá zmysel opraviť dané zariadenie. Najmä ak sa jedná o notebook, môže jeho repasovanie častokrát zlepšiť funkčnosť natoľko že pominie dôvod na kúpu nového modelu.',
+      p2: 'V dnešnej dobe je jednak z ekonomického ale aj z ekologického hľadiska dobré sa vždy zamyslieť či nemá zmysel opraviť dané zariadenie. Najmä ak sa jedná o notebook, môže jeho repasovanie častokrát zlepšiť funkčnosť natoľko že pominie dôvod na kúpu nového modelu.',
       p3: 'Dôležitou súčasťou opravy je použitie kvalitných náhradných dielov. Tým sa zaručí trvácnosť a spoľahlivosť zariadenia na ďalšie dlhé obdobie.',
     },
     newComputerPage: {
