@@ -4,6 +4,8 @@
             class="page-button" :doHoverAnimation="false" />
         <div>
         <p>{{ $t("diagnosticsPage.p1") }}</p>
+        <p>{{ $t("diagnosticsPage.p2") }}</p>
+        <p>{{ $t("diagnosticsPage.p3") }}</p>
         </div>
     </div>
 </template>
