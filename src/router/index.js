@@ -3,7 +3,7 @@ import MainPage from "@/views/MainPage.vue";
 import ComputerPage from "@/views/ComputerPage.vue";
 import DiagnosticsPage from "@/views/DiagnosticsPage.vue";
 import LaptopPage from "@/views/LaptopPage.vue";
-import NewComputerPage from "@/views/NewComputerPage.vue";
+import MaintenancePage from "@/views/MaintenancePage.vue";
 import PortfolioPage from "@/views/PortfolioPage.vue";
 import RepairPage from "@/views/RepairPage.vue";
 import PrivacyPolicyPage from "@/views/PrivacyPolicyPage.vue";
@@ -30,9 +30,9 @@ const routes = [
     component: LaptopPage,
   },
   {
-    path: "/novy-pc-kosice",
-    name: "NewComputerPage",
-    component: NewComputerPage,
+    path: "/udrzba-pc-kosice",
+    name: "MaintenancePage",
+    component: MaintenancePage,
   },
   {
     path: "/portfolio-pc-servis-kosice",

@@ -7,7 +7,7 @@ const messages = {
       sluzby: 'Služby',
       referencie: 'Referencie',
       portfolio: 'Portfólio',
-      pcZostavy: 'Údržba počítačov a notebookov',
+      udrzba: 'Údržba počítačov a notebookov',
       notebooky: 'Notebooky',
       oMne: 'O mne',
     },
@@ -47,7 +47,7 @@ const messages = {
       p2: 'V dnešnej dobe je jednak z ekonomického ale aj z ekologického hľadiska dobré sa vždy zamyslieť, či nemá zmysel opraviť dané zariadenie. Najmä ak sa jedná o notebook, môže jeho repasovanie častokrát zlepšiť funkčnosť natoľko, že pominie dôvod na kúpu nového modelu.',
       p3: 'Dôležitou súčasťou opravy je použitie kvalitných náhradných dielov, čím sa zvýši spoľahlivosť zariadenia a predĺži jeho životnosť.',
     },
-    newComputerPage: {
+    maintenancePage: {
       p1: 'S údržbou zariadenia je to veľmi podobné starostlivosti o seba. Viete sa o počítač starať, čistiť ho sám a raz za rok či dva zabehnúť ho dať profesionálne skontrolovať.',
       p2: 'Je u mňa samozrejmosťou že pri preberaní vašej novej zostavy si spolu preberieme presne postup čistenia a údržby. Kde sú prachové filtre, ako sa vyberajú, čo môže pomôcť a čo naopak uškodí a kumuluje prach v počítači.',
       p3: 'V dokonalom svete sa tento postup dodrží a vy sa môžete tešiť dlhodobo tichému a výkonnému stroju. Samozrejme, v živote to nie vždy ide tak, ako si predstavujeme a vtedy vám rád pomôžem.',
@@ -75,7 +75,7 @@ const messages = {
       sluzby: 'Services',
       referencie: 'References',
       portfolio: 'Portfolio',
-      pcZostavy: 'Computer and laptop maintenance',
+      udrzba: 'Computer and laptop maintenance',
       notebooky: 'Laptops',
       oMne: 'About me',
     },
@@ -115,7 +115,7 @@ const messages = {
     p2: "In today's world, it's good both economically and ecologically to consider repairing a device. Especially with laptops, refurbishment can often improve functionality to the point where there's no need to buy a new model.",
     p3: 'Using high-quality spare parts is an essential part of the repair process. This ensures the durability and reliability of the device for an extended period.'
   },
-  newComputerPage: {
+  maintenancePage: {
     p1: 'Taking care of your device is much like taking care of yourself. You can maintain your computer, clean it yourself, and once every year or two, have it professionally serviced.',
     p2: "When receiving your new setup, we'll go through the exact cleaning and maintenance procedures together. We'll discuss where the dust filters are, how to remove them, what can help, and what might harm and accumulate dust in the computer.",
     p3: "In an ideal world, this process is followed, and you can enjoy a consistently quiet and powerful machine. Of course, life doesn't always go as planned, and that's where I'm happy to help.",

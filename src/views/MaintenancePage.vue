@@ -1,12 +1,12 @@
 <template>
     <div class="centered-text">
-        <MainPageButton imageSrc="T_Skladanie_02.png" text="mainPage.skladaniePC"
-            :page="'novy-pc-kosice'" topMargin="73%" :doHoverAnimation="false" class="page-button" />
+        <MainPageButton imageSrc="T_PC_Udrzba.png" text="navigationBar.udrzba"
+            :page="'udrzba-pc-kosice'" topMargin="73%" :doHoverAnimation="false" class="page-button" />
         <div>
-        <p>{{ $t("newComputerPage.p1") }}</p>
-        <p>{{ $t("newComputerPage.p2") }}</p>
-        <p>{{ $t("newComputerPage.p3") }}</p>
-        <p>{{ $t("newComputerPage.p4") }}</p>
+        <p>{{ $t("maintenancePage.p1") }}</p>
+        <p>{{ $t("maintenancePage.p2") }}</p>
+        <p>{{ $t("maintenancePage.p3") }}</p>
+        <p>{{ $t("maintenancePage.p4") }}</p>
         </div>
     </div>
 </template>
@@ -15,7 +15,7 @@
 import MainPageButton from '@/components/MainPageButton.vue';
 import { useHead } from '@vueuse/head';
 export default {
-    name: 'NewComputerPage',
+    name: 'MaintenancePage',
     setup() {
         useHead({
             title: 'RST - Rýchlejšie, spoľahlivejšie, tichšie',

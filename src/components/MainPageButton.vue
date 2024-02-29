@@ -98,8 +98,8 @@ export default {
   opacity: 0;
   transition: opacity 0.4s ease;
   /* Masking */
-  -webkit-mask-image: url('../assets/T_PC_Zostavy.png');
-  mask-image: url('../assets/T_PC_Zostavy.png');
+  -webkit-mask-image: url('../assets/T_PC_Udrzba.png');
+  mask-image: url('../assets/T_PC_Udrzba.png');
   mask-size: cover;
 }
 
