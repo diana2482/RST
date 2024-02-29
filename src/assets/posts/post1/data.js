@@ -1,14 +1,14 @@
 // src/assets/posts/post1/data.js
 export default {
     sk: {
-      title: "Prvy post",
-      date: "prveho prvy 2023",
-      description: "Toto je prvy post",
+      title: "Štýlový workstation",
+      date: "2024-01-01",
+      description: "Krásna PC zostava určená na prácu v 3D programoch.",
     },
     en: {
-      title: "First post",
-      date: "2016-01-01",
-      description: "This is the first post",
+      title: "Chick workstation",
+      date: "2024-01-01",
+      description: "Gorgeous custom built PC used mostly 3D software work",
     }
   };
   
