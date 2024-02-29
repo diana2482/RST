@@ -18,15 +18,15 @@ export default {
     name: 'LaptopPage',
     setup() {
         useHead({
-            title: 'RST - Rýchlejšie, spoľahlivejšie, tichšie',
+            title: 'Notebooky',
             meta: [
                 {
                     name: 'description',
-                    content: 'Servis, Skladanie počítačových zostáv na mieru. Oprava počítačov a notebookov. Košice',
+                    content: 'Nový alebo starý notebook, na všetko sa u nás nájde riešenie',
                 },
                 {
                     name: 'keywords',
-                    content: 'pc, pocitac, servis, kosice, košice, oprava, notebook, zostava, skladanie, rýchlejšie, spoľahlivejšie, tichšie, rýchlejšie spoľahlivejšie tichšie, rst, rstservis, rst.sk, rst servis, rst.sk servis, rst.sk servis košice, rst.sk košice, rst.sk servis pc košice, rst.sk servis',
+                    content: 'servis, kosice, košice, oprava, notebook, oprava laptopu, oprava notebooku',
                 },
             ],
         })
