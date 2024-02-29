@@ -18,15 +18,15 @@ export default {
     name: 'MaintenancePage',
     setup() {
         useHead({
-            title: 'RST - Rýchlejšie, spoľahlivejšie, tichšie',
+            title: 'Údržba počítačov a notebookov',
             meta: [
                 {
                     name: 'description',
-                    content: 'Servis, Skladanie počítačových zostáv na mieru. Oprava počítačov a notebookov. Košice',
+                    content: 'Komplexná údržba ako nových, tak starších zariadení',
                 },
                 {
                     name: 'keywords',
-                    content: 'pc, pocitac, servis, kosice, košice, oprava, notebook, zostava, skladanie, rýchlejšie, spoľahlivejšie, tichšie, rýchlejšie spoľahlivejšie tichšie, rst, rstservis, rst.sk, rst servis, rst.sk servis, rst.sk servis košice, rst.sk košice, rst.sk servis pc košice, rst.sk servis',
+                    content: 'pc, pocitac, servis, kosice, košice, oprava, notebook, zostava, údržba, profylaxia, prečistenie, prečistenie počítača, prepastovanie, výmena thermalpadov, prečistenie grafickej karty, prepastovanie notebooku, vysoká teplota počítača, vysoká teplota notebooku',
                 },
             ],
         })
