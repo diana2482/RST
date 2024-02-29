@@ -4,7 +4,7 @@
              | {{ $t("footer.design") }} <a href="https://www.artstation.com/daliborjancura" target="_blank">Dalibor Jancura</a></span>
         <span class="mobile-footer">{{ $t("footer.created") }} <a href="https://www.linkedin.com/in/diana-or%C5%A1olyov%C3%A1-099292276/" target="_blank">Diana Oršolyová</a>
              <br>{{ $t("footer.design") }} <a href="https://www.artstation.com/daliborjancura" target="_blank">Dalibor Jancura</a></span>
-        <router-link to="/privacy-policy" class="footer-text">{{ $t("footer.privacy") }}</router-link>
+        <!-- <router-link to="/privacy-policy" class="footer-text">{{ $t("footer.privacy") }}</router-link> -->
     </footer>
 </template>
   
@@ -23,7 +23,8 @@ export default {
     height: 5rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    /* justify-content: space-between; */
     padding: 1rem 3rem;
     box-sizing: border-box;
     text-align: center;

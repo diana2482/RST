@@ -1,19 +1,19 @@
 <template>
   <NavigationBar />
   <router-view />
-  <CookiePopup />
+  <!-- <CookiePopup /> -->
   <FooterComponent />
 </template>
 
 <script>
 import NavigationBar from './components/NavigationBar.vue';
-import CookiePopup from './components/CookiePopup.vue';
+// import CookiePopup from './components/CookiePopup.vue';
 import FooterComponent from './components/FooterComponent.vue';
 
 export default {
   components: {
     NavigationBar,
-    CookiePopup,
+    // CookiePopup,
     FooterComponent,
   },
   name: 'App',

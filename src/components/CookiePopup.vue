@@ -20,19 +20,19 @@ export default {
   mounted() {
     this.showPopup = !this.hasConsented();
   },
-  methods: {
-    hasConsented() {
-      return !!this.$cookies.get('userConsent');
-    },
-    acceptCookies() {
-      this.$cookies.set('userConsent', 'accepted', { expires: 365, sameSite: 'None' });
-      this.showPopup = false;
-    },
-    rejectCookies() {
-      this.$cookies.set('userConsent', 'rejected', { expires: 365, sameSite: 'None' });
-      this.showPopup = false;
-    }
-  }
+  // methods: {
+  //   hasConsented() {
+  //     return !!this.$cookies.get('userConsent');
+  //   },
+  //   acceptCookies() {
+  //     this.$cookies.set('userConsent', 'accepted', { expires: 365, sameSite: 'None' });
+  //     this.showPopup = false;
+  //   },
+  //   rejectCookies() {
+  //     this.$cookies.set('userConsent', 'rejected', { expires: 365, sameSite: 'None' });
+  //     this.showPopup = false;
+  //   }
+  // },
 };
 </script>
 

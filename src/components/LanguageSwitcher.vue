@@ -26,10 +26,10 @@ export default {
     setLanguage(newLang) {
       this.$i18n.locale = newLang;
       this.currentLanguage = newLang;
-      if (this.$cookies.get('userConsent') === 'accepted'){
+      // if (this.$cookies.get('userConsent') === 'accepted'){
 
-        Cookies.set('userLanguage', newLang, { expires: 365, sameSite: 'Lax' });
-      }
+      //   Cookies.set('userLanguage', newLang, { expires: 365, sameSite: 'Lax' });
+      // }
     },
   },
   mounted() {

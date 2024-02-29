@@ -141,14 +141,14 @@ const messages = {
   // Add other languages here
 };
 
-function getBrowserLanguage(options = { supportedLanguages: ['en', 'sk'], defaultLanguage: 'sk' }) {
-  const browserLocale = navigator.language.split('-')[0]; // Get the language code
-  return options.supportedLanguages.includes(browserLocale) ? browserLocale : options.defaultLanguage;
-}
+// function getBrowserLanguage(options = { supportedLanguages: ['en', 'sk'], defaultLanguage: 'sk' }) {
+//   const browserLocale = navigator.language.split('-')[0]; // Get the language code
+//   return options.supportedLanguages.includes(browserLocale) ? browserLocale : options.defaultLanguage;
+// }
 
 // Create i18n instance with configuration
 const i18n = createI18n({
-  locale: getBrowserLanguage(), // Automatically detect and set locale
+  locale: 'sk', // Automatically detect and set locale
   fallbackLocale: 'sk', // Fallback to Slovak if the detected locale is not supported
   messages,
 });
