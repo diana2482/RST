@@ -44,6 +44,7 @@ body {
   padding: 0;
   overflow-x: hidden;
   background-image: url('assets/T_Background.jpg');
+  background-size: cover;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
