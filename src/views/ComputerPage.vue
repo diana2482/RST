@@ -19,15 +19,15 @@ export default {
     name: 'ComputerPage',
     setup() {
         useHead({
-            title: 'RST - Rýchlejšie, spoľahlivejšie, tichšie',
+            title: 'Počítač na mieru',
             meta: [
                 {
                     name: 'description',
-                    content: 'Servis, Skladanie počítačových zostáv na mieru. Oprava počítačov a notebookov. Košice',
+                    content: '',
                 },
                 {
                     name: 'keywords',
-                    content: 'pc, pocitac, servis, kosice, košice, oprava, notebook, zostava, skladanie, rýchlejšie, spoľahlivejšie, tichšie, rýchlejšie spoľahlivejšie tichšie, rst, rstservis, rst.sk, rst servis, rst.sk servis, rst.sk servis košice, rst.sk košice, rst.sk servis pc košice, rst.sk servis',
+                    content: 'pc, pocitac, na mieru, kosice, košice, custom zostava, počítač na mieru, zostava, skladanie, ručne skladané, rýchlejšie spoľahlivejšie tichšie, rst, rstservis, rst.sk, rst servis, rst.sk servis, rst.sk servis košice, rst.sk košice, rst.sk servis pc košice, rst.sk servis',
                 },
             ],
         })
