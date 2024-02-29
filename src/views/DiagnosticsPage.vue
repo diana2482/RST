@@ -17,15 +17,15 @@ export default {
     name: 'DiagnosticsPage',
     setup() {
         useHead({
-            title: 'RST - Rýchlejšie, spoľahlivejšie, tichšie',
+            title: 'Diagnostika',
             meta: [
                 {
                     name: 'description',
-                    content: 'Servis, Skladanie počítačových zostáv na mieru. Oprava počítačov a notebookov. Košice',
+                    content: 'Diagnostika počítačov, notebookov a iných zariadení',
                 },
                 {
                     name: 'keywords',
-                    content: 'pc, pocitac, servis, kosice, košice, oprava, notebook, zostava, skladanie, rýchlejšie, spoľahlivejšie, tichšie, rýchlejšie spoľahlivejšie tichšie, rst, rstservis, rst.sk, rst servis, rst.sk servis, rst.sk servis košice, rst.sk košice, rst.sk servis pc košice, rst.sk servis',
+                    content: 'diagnostika, pc, pocitac, počítač, servis, oprava, kosice, košice, notebook, zostava, oprava grafickej karty, prehrievanie počítača',
                 },
             ],
         })
