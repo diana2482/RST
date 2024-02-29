@@ -75,7 +75,7 @@ const messages = {
       sluzby: 'Services',
       referencie: 'References',
       portfolio: 'Portfolio',
-      pcZostavy: 'Maintenance of computers and laptops',
+      pcZostavy: 'Computer and laptop maintenance',
       notebooky: 'Laptops',
       oMne: 'About me',
     },

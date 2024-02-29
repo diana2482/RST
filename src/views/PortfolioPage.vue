@@ -43,9 +43,7 @@ export default {
             return postData['sk'][field]; // Assuming 'sk' is the default/fallback language
         },
     }, mounted() {
-        this.loadPostsData().then(() => {
-            this.postsData.forEach(post => console.log(post.id));
-        });
+        this.loadPostsData();
     },
 }
 </script>
