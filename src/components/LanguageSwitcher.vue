@@ -9,13 +9,14 @@
 </template>
 
 <script>
-import Cookies from 'js-cookie';
+// import Cookies from 'js-cookie';
 
 export default {
   data() {
     return {
       // Initialize currentLanguage from a cookie, or default to the i18n locale
-      currentLanguage: Cookies.get('userLanguage') || this.$i18n.locale,
+      // currentLanguage: Cookies.get('userLanguage') || this.$i18n.locale,
+      currentLanguage: this.$i18n.locale,
     };
   },
   methods: {
