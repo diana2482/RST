@@ -1,13 +1,13 @@
 export default {
     sk: {
-      title: "Dell s hlučným ventilátorom",
-      date: "2020-02-14",
-      description: "Dnes nás čakal hrkajúci DELL. Naštastie sa jednalo iba o ventilátor. No, bola potrebná 100% istota a teda sa šlo do komplexnej diagnostiky.",
+      title: "Prepastovanie grafickej karty",
+      date: "2020-02-30",
+      description: "Tejto Nvidia GTX 1080Ti sa po zákroku teploty znížili o 10°c. Veríme že bude naďalej slúžiť ako sa patrí na plný výkon s príjemnými teplotami a tichým chodom.",
     },
     en: {
-      title: "Dell with a noisy fan",
-      date: "2020-02-14",
-      description: "Today we encountered a noisy DELL. Fortunately, it was only the fan. However, 100% certainty was needed, so we proceeded with a comprehensive diagnosis.",
+      title: "Repasting the graphics card",
+      date: "2020-02-30",
+      description: "After this intervention, the temperatures of this Nvidia GTX 1080Ti decreased by 10°C. We believe it will continue to perform as expected, with pleasant temperatures and quiet operation.",
     }
   };
   
