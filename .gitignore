@@ -1,6 +1,7 @@
 # Dependency directories
 node_modules/
 dist/
+dist.zip
 
 # Debug logs
 npm-debug.log*

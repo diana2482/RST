@@ -7,10 +7,11 @@
             <div v-for="(imageName, index) in actualImageNames" :key="imageName" class="image-container">
                 <img :src="getImagePath(imageName)" class="post-image" alt="Post" @click="openModal(index)" />
             </div>
-            <div v-if="allActualImages.length > 4 && showModal == false" @click="openModal(3)" class="plus">+</div>
+            <div v-if="allActualImages.length > 4 && showModal == false && showPlusDiv" @click="openModal(3)" class="plus">+
+            </div>
         </div>
         <div v-if="showModal" class="modal">
-            <button class="close" @click="closeModal">&times;</button>
+            <button class="close" @click="closeModal()">&times;</button>
             <button class="prev" @click="previousImage">&#10094;</button>
             <img :src="modalImagePath" class="modal-content" alt="image in modal">
             <button class="next" @click="nextImage">&#10095;</button>
@@ -19,6 +20,7 @@
 </template>
 
 <script>
+import { EventBus } from '@/eventBus';
 export default {
     name: 'PostComponent',
     props: {
@@ -47,6 +49,7 @@ export default {
             actualImageNames: [],
             allActualImages: [],
             showModal: false,
+            showPlusDiv: true,
             currentImageIndex: 0,
             touchStartX: 0,
             touchEndX: 0,
@@ -86,6 +89,7 @@ export default {
         openModal(imageIndex) {
             this.currentImageIndex = imageIndex;
             this.showModal = true;
+            EventBus.emit('modalOpened');
 
             // Wait for the next DOM update cycle before trying to access the modal
             this.$nextTick(() => {
@@ -104,6 +108,7 @@ export default {
         },
         closeModal() {
             this.showModal = false;
+            EventBus.emit('modalClosed');
             const modalImage = document.querySelector('.modal-content');
             if (modalImage) {
                 modalImage.removeEventListener('touchstart', this.handleTouchStart, false);
@@ -125,16 +130,25 @@ export default {
                 this.previousImage();
             }
         },
-        // Modify nextImage and previousImage to include transitions
         nextImage() {
             this.currentImageIndex = (this.currentImageIndex + 1) % this.allActualImages.length;
-            // Trigger animation here if needed
         },
         previousImage() {
             this.currentImageIndex = (this.currentImageIndex + this.allActualImages.length - 1) % this.allActualImages.length;
-            // Trigger animation here if needed
         },
     },
+    mounted() {
+        EventBus.on('modalOpened', () => {
+            this.showPlusDiv = false;
+        });
+        EventBus.on('modalClosed', () => {
+            this.showPlusDiv = true;
+        });
+    },
+    beforeUnmount() {
+        EventBus.off('modalOpened');
+        EventBus.off('modalClosed');
+    }
 }
 </script>
 
@@ -289,7 +303,9 @@ button {
         padding-left: 1rem;
         padding-right: 1rem;
     }
+
     .plus {
         font-size: 15vw;
     }
-}</style>
+}
+</style>
