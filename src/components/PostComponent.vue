@@ -105,6 +105,7 @@ export default {
                     modalImage.addEventListener('touchend', this.handleTouchEnd, false);
                 }
             });
+            window.addEventListener('keydown', this.handleKeydown);
         },
         closeModal() {
             this.showModal = false;
@@ -114,6 +115,8 @@ export default {
                 modalImage.removeEventListener('touchstart', this.handleTouchStart, false);
                 modalImage.removeEventListener('touchend', this.handleTouchEnd, false);
             }
+
+            window.removeEventListener('keydown', this.handleKeydown);
         },
         handleTouchStart(event) {
             this.touchStartX = event.changedTouches[0].screenX;
@@ -127,6 +130,13 @@ export default {
                 this.nextImage();
             } else if (this.touchStartX - this.touchEndX < -50) {
                 // Swipe right
+                this.previousImage();
+            }
+        },
+        handleKeydown(event) {
+            if (event.key === "ArrowRight") {
+                this.nextImage();
+            } else if (event.key === "ArrowLeft") {
                 this.previousImage();
             }
         },
