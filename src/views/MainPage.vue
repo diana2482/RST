@@ -27,10 +27,10 @@
   <SpacerComponent :space="'5rem'" />
 
   <div id="references" class="partners">
-    <PartnerComponent image="game_days.png" text="mainPage.gameDays" page="gamedays.sk" />
-    <PartnerComponent image="games_farm.png" text="mainPage.gamesFarm" page="games-farm.com" />
-    <PartnerComponent image="triple_hill.png" text="mainPage.tripleHill" page="triple-hill.com" />
-    <PartnerComponent image="3dvision.png" text="mainPage.threeDVision" page="3division.sovietrepublic.net" />
+    <PartnerComponent image="game_days.png" text="partners.gameDays" page="gamedays.sk" />
+    <PartnerComponent image="games_farm.png" text="partners.gamesFarm" page="games-farm.com" />
+    <PartnerComponent image="triple_hill.png" text="partners.tripleHill" page="triple-hill.com" />
+    <PartnerComponent image="3dvision.png" text="partners.threeDVision" page="3division.sovietrepublic.net" />
   </div>
 
   <SpacerComponent :space="'5rem'" />

@@ -1,7 +1,10 @@
 <template>
     <div class="partner-container" @click="togglePopup">
         <img :src="require('@/assets/' + image)" class="partner" alt="PartnerRST"/>
-        <div v-html="translatedText"></div>
+        <div>{{ $t(this.text) }}</div>
+        <br/>
+        <div style="font-weight: bold;">{{ $t(this.text + 'Referrer') }}</div>
+        <div style="font-weight: bold;">{{ $t(this.text + 'Position') }}</div>
         <div class="partner-link"><a :href="formattedPage" target="_blank">{{ page }}</a></div>
     </div>
     
@@ -18,6 +21,14 @@ export default {
             type: String,
             required: true,
         },
+        // referrer: {
+        //     type: String,
+        //     required: true,
+        // },
+        // position: {
+        //     type: String,
+        //     required: true,
+        // },
         page: {
             type: String,
             required: true,

@@ -20,14 +20,23 @@ const messages = {
       opravaPC: 'Oprava počítačov a notebookov',
       skladaniePC: 'Skladanie počítačov',
       diagnostika: 'Diagnostika',
-      // partners, references
-      gameDays: 'S RST.sk spolupracujeme na organizácii konferencie Game Days ale aj mimo nej posledné tri roky. Vďaka svedomitosti a precíznosti p. Baksyho vieme, že sa na náš hardvér a softvér môžeme vždy spoľahnúť. Kvalita jeho práce v pomere k cenám za jeho služby je bezkonkurenčná.<br><br><b>Matej Hudák<br>CPO</b>',
-      gamesFarm: 'RST.sk pre Games Farm zabezpečuje kompletnú technickú podporu už viac ako 5 rokov. Či potrebujeme nový spoľahlivý hardvér pre zamestnancov alebo dôkladnú údržbu, vždy sa obraciame na pána Baksyho a vieme, že všetko bude zvládnuté včas a v tej najvyššej kvalite.<br><br><b>Peter Nagy<br>CEO</b>',
-      tripleHill: 'RST.sk pre nás zabezpečuje všetku techniku a nemenili by sme. Viackrát nás už zachránili pred nešťastným nákupom komponentov, či vyriešili problém na ktorý sme nevedeli prísť. Absolútne skvelý návrh, stavba a servis akejkoľvek IT techniky. Vrelo odporúčam!<br><br><b>Peter Adamondy<br>Riaditeľ</b>',
-      threeDVision: 'Pre mňa TOP firma keď si chcem nechať poskladať počítač. Odbornosť, profesionalita, ochota poradiť, jednoducho odporúčam!<br><br><b>Peter Adamčík<br>CEO</b>',
       // about me
       oMneText: 'Môj záujem o počítače a súvisiace technológie sa formoval od mojej mladosti. S viac ako 15-ročnou skúsenosťou v IT sektore som nadobudol vedomosti a zručnosti, ktoré aplikujem v každom aspekte práce. Ku každému projektu pristupujem s dôkladnosťou a starostlivosťou, aby som zabezpečil, že každá požiadavka je splnená na najvyššej možnej úrovni.',
       kontakt: 'Napíšte mi alebo zavolajte, osobné konzultácie robím v rámci Košíc.'
+    },
+    partners: {
+      gameDays: 'S RST.sk spolupracujeme na organizácii konferencie Game Days ale aj mimo nej posledné tri roky. Vďaka svedomitosti a precíznosti p. Baksyho vieme, že sa na náš hardvér a softvér môžeme vždy spoľahnúť. Kvalita jeho práce v pomere k cenám za jeho služby je bezkonkurenčná.',
+      gameDaysReferrer: 'Matej Hudák',
+      gameDaysPosition: 'CPO',      
+      gamesFarm: 'RST.sk pre Games Farm zabezpečuje kompletnú technickú podporu už viac ako 5 rokov. Či potrebujeme nový spoľahlivý hardvér pre zamestnancov alebo dôkladnú údržbu, vždy sa obraciame na pána Baksyho a vieme, že všetko bude zvládnuté včas a v tej najvyššej kvalite.',
+      gamesFarmReferrer: 'Peter Nagy',
+      gamesFarmPosition: 'CEO',
+      tripleHill: 'RST.sk pre nás zabezpečuje všetku techniku a nemenili by sme. Viackrát nás už zachránili pred nešťastným nákupom komponentov, či vyriešili problém na ktorý sme nevedeli prísť. Absolútne skvelý návrh, stavba a servis akejkoľvek IT techniky. Vrelo odporúčam!',
+      tripleHillReferrer: 'Peter Adamondy',
+      tripleHillPosition: 'Director',
+      threeDVision: 'Pre mňa TOP firma keď si chcem nechať poskladať počítač. Odbornosť, profesionalita, ochota poradiť, jednoducho odporúčam!',
+      threeDVisionReferrer: 'Peter Adamčík',
+      threeDVisionPosition: 'CEO',
     },
     computerPage: {
       p1: 'Návrh - realizácia - testovanie - podpora po odovzdaní.',
@@ -88,14 +97,23 @@ const messages = {
       opravaPC: 'Computer and laptop repair',
       skladaniePC: 'Custom built PC',
       diagnostika: 'Diagnosis',
-      // partners, references
-      gameDays: 'We have been collaborating with RST.sk on organizing the Game Days conference, as well as other projects, for the past three years. Thanks to Mr. Baksys diligence and precision, we know that we can always rely on our hardware and software. The quality of his work in relation to the prices for his services is unmatched. <br><br><b>Matej Hudák<br>CPO</b>',
-      gamesFarm: 'RST.sk has been providing complete technical support for Games Farm for over 5 years. Whether we need new reliable hardware for our employees or thorough maintenance, we always turn to Mr. Baksy, knowing that everything will be handled on time and with the highest quality.<br><br><b>Peter Nagy<br>CEO</b>',
-      tripleHill: 'RST.sk provides all our technical needs, and we wouldnt change it for anything. Theyve saved us from making unfortunate component purchases multiple times and have solved problems we couldnt figure out. Absolutely fantastic design, construction, and service for any IT equipment. Highly recommended!<br><br><b>Peter Adamondy<br>Director</b>',
-      threeDVision: 'For me, a TOP company when I want to have a computer assembled, expertise, professionalism, willingness to advise, I simply recommend. <br><br><b>Peter Adamčík<br>CEO</b>',
       // about me
       oMneText: 'My enthusiasm for computers and related technology has been a driving force since my youth. Over the span of more than 15 years in the IT sector, Ive honed my skills and expertise. This wealth of experience informs every aspect of my work, ensuring that each project is approached with precision and care. I am dedicated to providing users with an exceptional experience tailored to their needs.',
       kontakt: 'Dont hesitate to call or text me, I conduct personal consultations within the Košice region.'
+    },
+    partners: {
+      gameDays: 'We have been collaborating with RST.sk on organizing the Game Days conference, as well as other projects, for the past three years. Thanks to Mr. Baksys diligence and precision, we know that we can always rely on our hardware and software. The quality of his work in relation to the prices for his services is unmatched.',
+      gameDaysReferrer: 'Matej Hudák',
+      gameDaysPosition: 'CPO',      
+      gamesFarm: 'RST.sk has been providing complete technical support for Games Farm for over 5 years. Whether we need new reliable hardware for our employees or thorough maintenance, we always turn to Mr. Baksy, knowing that everything will be handled on time and with the highest quality.',
+      gamesFarmReferrer: 'Peter Nagy',
+      gamesFarmPosition: 'CEO',
+      tripleHill: 'RST.sk provides all our technical needs, and we wouldnt change it for anything. Theyve saved us from making unfortunate component purchases multiple times and have solved problems we couldnt figure out. Absolutely fantastic design, construction, and service for any IT equipment. Highly recommended!',
+      tripleHillReferrer: 'Peter Adamondy',
+      tripleHillPosition: 'Director',
+      threeDVision: 'For me, a TOP company when I want to have a computer assembled, expertise, professionalism, willingness to advise, I simply recommend.',
+      threeDVisionReferrer: 'Peter Adamčík',
+      threeDVisionPosition: 'CEO',
   },
   computerPage: {
     p1: 'Design - implementation - testing - post-delivery support.',
