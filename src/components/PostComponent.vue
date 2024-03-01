@@ -1,8 +1,8 @@
 <template>
     <div class="wrapper">
-        <div class="text-element" v-text="title" style="font-size: 26px;"></div>
+        <div class="text-element smaller-title" v-text="title" style="font-size: 26px;"></div>
         <div class="text-element" v-text="date" style="font-size: 16px; color: #909090"></div>
-        <div class="text-element" v-text="description" style="font-size: 18px;"></div>
+        <div class="text-element smaller-description" v-text="description" style="font-size: 18px;"></div>
         <div class="images">
             <div v-for="(imageName, index) in actualImageNames" :key="imageName" class="image-container">
                 <img :src="getImagePath(imageName)" class="post-image" alt="Post" @click="openModal(index)" />
@@ -10,12 +10,13 @@
             <div v-if="allActualImages.length > 4 && showModal == false && showPlusDiv" @click="openModal(3)" class="plus">+
             </div>
         </div>
-        <div v-if="showModal" class="modal">
+        <div v-if="showModal" class="modal" @click="closeModalOnOutsideClick">
             <button class="close" @click="closeModal()">&times;</button>
             <button class="prev" @click="previousImage">&#10094;</button>
             <img :src="modalImagePath" class="modal-content" alt="image in modal">
             <button class="next" @click="nextImage">&#10095;</button>
         </div>
+
     </div>
 </template>
 
@@ -95,7 +96,7 @@ export default {
             this.$nextTick(() => {
                 const modalElement = document.querySelector('.modal');
                 if (modalElement) {
-                    modalElement.style.display = 'block';
+                    modalElement.style.display = 'flex';
                 } else {
                     console.error('Modal element not found');
                 }
@@ -117,6 +118,12 @@ export default {
             }
 
             window.removeEventListener('keydown', this.handleKeydown);
+        },
+        closeModalOnOutsideClick(event) {
+            // Check if the click is directly on the modal background
+            if (event.target.classList.contains('modal')) {
+                this.closeModal();
+            }
         },
         handleTouchStart(event) {
             this.touchStartX = event.changedTouches[0].screenX;
@@ -232,26 +239,27 @@ export default {
     flex-wrap: wrap;
     width: 100%;
     position: relative;
-    /* This ensures that the .plus div can be absolutely positioned within it */
     align-items: flex-start;
     align-content: flex-start;
 }
 
 .modal {
-    display: none;
     position: fixed;
-    z-index: 1;
-    padding-top: 25vh;
+    z-index: 1000;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.9);
+    /* Centering content with flex */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.modal[style*="display: block"] {
-    display: block;
+.modal[style*="display: flex"] {
+    display: flex;
 }
 
 .modal-content {
@@ -316,6 +324,14 @@ button {
 
     .plus {
         font-size: 15vw;
+    }
+
+    .smaller-title {
+        font-size: 20px !important;
+    }
+
+    .smaller-description {
+        font-size: 16px !important;
     }
 }
 </style>
