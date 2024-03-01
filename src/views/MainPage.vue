@@ -34,6 +34,8 @@
   </div>
 
   <SpacerComponent :space="'5rem'" />
+  <hr style="width: 60vw">
+  <SpacerComponent :space="'5rem'" />
 
   <div id="about" class="about-section">
     <div class="text-container">
